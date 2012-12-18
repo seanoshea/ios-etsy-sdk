@@ -18,6 +18,10 @@
 
 #import "SOSEtsyBaseModel.h"
 
+/**
+ `SOSEtsyListingImage` defines an image which is typically associated with
+ an 'SOSEtsyListing'
+ */
 @interface SOSEtsyListingImage : SOSEtsyBaseModel
 
 @property (nonatomic, strong) NSString *url_170x135;

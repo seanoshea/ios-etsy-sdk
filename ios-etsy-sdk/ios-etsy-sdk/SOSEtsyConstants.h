@@ -18,10 +18,17 @@
 
 #import "SOSEtsyResult.h"
 
+/**
+ `SOSEtsyConstants` defines some constants used throughout the API client.
+ */
+
 @interface SOSEtsyConstants : NSObject
 
 #pragma mark API Constants
 
+/**
+ Defines the base URL to target for the Etsy API.
+ */
 extern NSString const *kApiBaseUrl;
 
 #pragma mark API Typedefs

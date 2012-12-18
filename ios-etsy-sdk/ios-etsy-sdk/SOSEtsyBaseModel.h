@@ -16,6 +16,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ `SOSEtsyBaseModel` includes any common logic which is shared across all
+ model classes.
+ */
 @interface SOSEtsyBaseModel : NSObject
 
 @end

@@ -18,6 +18,10 @@
 
 #import "SOSEtsyResult.h"
 
+/**
+ `SOSEtsyListingsResult` is returned as a result of making a SOSEtsyListingsRequest.
+ */
+
 @interface SOSEtsyListingsResult : SOSEtsyResult
 
 @end

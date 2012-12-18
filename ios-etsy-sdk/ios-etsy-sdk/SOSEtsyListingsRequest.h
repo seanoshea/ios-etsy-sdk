@@ -18,8 +18,16 @@
 
 #import "SOSEtsyBaseRequest.h"
 
+/**
+ `SOSEtsyListingsRequest` allows a client developer to request listsings
+ for a particular shop.
+ */
+
 @interface SOSEtsyListingsRequest : SOSEtsyBaseRequest
 
+/**
+ Id by which the store is uniquiely identified by Etsy.
+ */
 @property NSString *shopId;
 
 @end

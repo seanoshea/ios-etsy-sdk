@@ -16,10 +16,25 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ `SOSEtsyResult` contains state and behaviour which is shared across all 'result' classes.
+ */
+
 @interface SOSEtsyResult : NSObject
 
+/**
+ A collection of domain objects returned from the API server. This is the meat of the response.
+ */
 @property (nonatomic, strong) NSMutableArray *results;
+
+/**
+ Optionally populated with errors returned from the API server.
+ */
 @property (nonatomic, strong) NSError* error;
+
+/**
+ HTTP status code.
+ */
 @property (nonatomic) NSInteger code;
 
 @end

@@ -18,6 +18,9 @@
 
 #import "SOSEtsyBaseModel.h"
 
+/**
+ `SOSEtsyListing` defines what actually constitutes an Etsy listing.
+ */
 @interface SOSEtsyListing : SOSEtsyBaseModel
 
 @property (nonatomic, strong) NSMutableArray *listingImages;
