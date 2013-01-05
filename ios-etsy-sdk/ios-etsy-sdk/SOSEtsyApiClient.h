@@ -15,6 +15,8 @@
  */
 
 #import <Foundation/Foundation.h>
+
+#import "SOSEtsyConstants.h"
 #import "SOSEtsyListingsRequest.h"
 
 /**
