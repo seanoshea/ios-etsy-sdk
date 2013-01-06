@@ -29,7 +29,7 @@
 @synthesize url = _url;
 @synthesize whenMade = _whenMade;
 
-- (id) init
+- (id)init
 {
 	self = [super init];
 	
