@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7668EEB61698026700B6D54C /* SOSEtsyListingsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEB71698026700B6D54C /* SOSEtsyResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3095167C413F002FA396 /* SOSEtsyResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEB81698026700B6D54C /* SOSEtsyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C30A7167C43D7002FA396 /* SOSEtsyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEB91698026700B6D54C /* SOSEtsyBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C309E167C41C4002FA396 /* SOSEtsyBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBA1698026700B6D54C /* SOSEtsyListing.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3098167C4165002FA396 /* SOSEtsyListing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBB1698026700B6D54C /* SOSEtsyListingImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C309B167C4177002FA396 /* SOSEtsyListingImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBC1698026700B6D54C /* SOSEtsyBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C30A1167C4218002FA396 /* SOSEtsyBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBD1698026700B6D54C /* SOSEtsyListingsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C30A4167C422A002FA396 /* SOSEtsyListingsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C304C167BF6B9002FA396 /* SOSEtsyApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEBF169802FF00B6D54C /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3076167C3F26002FA396 /* AFHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC0169802FF00B6D54C /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3078167C3F26002FA396 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC1169802FF00B6D54C /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C307A167C3F26002FA396 /* AFImageRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC2169802FF00B6D54C /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C307C167C3F26002FA396 /* AFJSONRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC3169802FF00B6D54C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C307E167C3F26002FA396 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC4169802FF00B6D54C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3080167C3F26002FA396 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC5169802FF00B6D54C /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3081167C3F26002FA396 /* AFPropertyListRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC6169802FF00B6D54C /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3083167C3F26002FA396 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC7169802FF00B6D54C /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3085167C3F26002FA396 /* AFXMLRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7668EEC8169802FF00B6D54C /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3087167C3F26002FA396 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		769C3048167BF6B9002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C304D167BF6B9002FA396 /* SOSEtsyApiClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 769C304C167BF6B9002FA396 /* SOSEtsyApiClient.h */; };
 		769C304F167BF6B9002FA396 /* SOSEtsyApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C304E167BF6B9002FA396 /* SOSEtsyApiClient.m */; };
@@ -274,6 +293,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7668EEB41698023600B6D54C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7668EEB61698026700B6D54C /* SOSEtsyListingsResult.h in Headers */,
+				7668EEB71698026700B6D54C /* SOSEtsyResult.h in Headers */,
+				7668EEB81698026700B6D54C /* SOSEtsyConstants.h in Headers */,
+				7668EEB91698026700B6D54C /* SOSEtsyBaseModel.h in Headers */,
+				7668EEBF169802FF00B6D54C /* AFHTTPClient.h in Headers */,
+				7668EEC0169802FF00B6D54C /* AFHTTPRequestOperation.h in Headers */,
+				7668EEC1169802FF00B6D54C /* AFImageRequestOperation.h in Headers */,
+				7668EEC2169802FF00B6D54C /* AFJSONRequestOperation.h in Headers */,
+				7668EEC3169802FF00B6D54C /* AFNetworkActivityIndicatorManager.h in Headers */,
+				7668EEC4169802FF00B6D54C /* AFNetworking.h in Headers */,
+				7668EEC5169802FF00B6D54C /* AFPropertyListRequestOperation.h in Headers */,
+				7668EEC6169802FF00B6D54C /* AFURLConnectionOperation.h in Headers */,
+				7668EEC7169802FF00B6D54C /* AFXMLRequestOperation.h in Headers */,
+				7668EEC8169802FF00B6D54C /* UIImageView+AFNetworking.h in Headers */,
+				7668EEBA1698026700B6D54C /* SOSEtsyListing.h in Headers */,
+				7668EEBB1698026700B6D54C /* SOSEtsyListingImage.h in Headers */,
+				7668EEBC1698026700B6D54C /* SOSEtsyBaseRequest.h in Headers */,
+				7668EEBD1698026700B6D54C /* SOSEtsyListingsRequest.h in Headers */,
+				7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		769C3043167BF6B9002FA396 /* ios-etsy-sdk */ = {
 			isa = PBXNativeTarget;
@@ -282,6 +330,7 @@
 				769C3040167BF6B9002FA396 /* Sources */,
 				769C3041167BF6B9002FA396 /* Frameworks */,
 				769C3042167BF6B9002FA396 /* CopyFiles */,
+				7668EEB41698023600B6D54C /* Headers */,
 			);
 			buildRules = (
 			);
