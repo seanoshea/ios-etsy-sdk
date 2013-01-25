@@ -1,5 +1,5 @@
 /*
- Copyright 2012 Sean O' Shea
+ Copyright 2012 - 2013 Sean O' Shea
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@
 /**
  `SOSEtsyListingsResult` is returned as a result of making a SOSEtsyListingsRequest.
  */
-
 @interface SOSEtsyListingsResult : SOSEtsyResult
 
 @end
