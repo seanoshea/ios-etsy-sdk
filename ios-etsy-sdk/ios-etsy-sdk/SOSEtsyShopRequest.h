@@ -16,10 +16,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SOSEtsyBaseRequest.h"
+
 /**
- `SOSEtsyBaseRequest` includes any common functionality which is shared between
- API requests.
+ `SOSEtsyShopRequest` allows a client developer to request shop details for a particular shop.
  */
-@interface SOSEtsyBaseRequest : NSObject
+@interface SOSEtsyShopRequest : SOSEtsyBaseRequest
+
+/**
+ Id by which the store is uniquiely identified by Etsy.
+ */
+@property (nonatomic, strong) NSString *shopId;
 
 @end

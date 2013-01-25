@@ -21,10 +21,12 @@
 #import "SOSEtsyListingsResult.h"
 #import "SOSEtsyListing.h"
 #import "SOSEtsyListingImage.h"
+#import "SOSEtsyShop.h"
+#import "SOSEtsyShopResult.h"
 
 @interface SOSEtsyApiClient (Private)
 
-- (void)basicSanityChecks;
+- (void)basicSanityChecks:(SOSEtsyBaseRequest*)request;
 - (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON;
 @end
 
@@ -49,8 +51,7 @@
                successBlock:(SOSEtsySuccessBlock)successBlock
                failureBlock:(SOSEtsyFailureBlock)failureBlock
 {
-    [self basicSanityChecks];
-    NSAssert(listingsRequest, @"The request being executed should not be nil");
+    [self basicSanityChecks:listingsRequest];
 
     // generate the url
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
@@ -100,9 +101,64 @@
     return operation;
 }
 
-- (void)basicSanityChecks
+- (NSOperation*)getShop:(SOSEtsyShopRequest*)shopRequest
+           successBlock:(SOSEtsySuccessBlock)successBlock
+           failureBlock:(SOSEtsyFailureBlock)failureBlock
+{
+    [self basicSanityChecks:shopRequest];
+    
+    // generate the url
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
+    NSString *path = [NSString stringWithFormat:@"shops/%@", shopRequest.shopId];
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[SOSEtsyApiClient sharedInstance].apiKey, nil] forKeys:[NSArray arrayWithObjects:@"api_key", nil]];
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET" path:path parameters:parameters];
+    
+    // execute the request
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        id jsonResponse = [JSON objectForKey:@"results"];
+        if (jsonResponse) {
+            SOSEtsyShopResult *result = [[SOSEtsyShopResult alloc] init];
+            result.code = 200;
+            // great - got something usable back from the server. Time to parse out the listings.
+            if ([jsonResponse isKindOfClass:[NSArray class]]) {
+                for (id listing in jsonResponse) {
+                    [result.results addObject:[SOSEtsyApiClient digestListingFromJSON:listing]];
+                }
+            } else {
+                // must be just one active listing
+                [result.results addObject:[SOSEtsyApiClient digestListingFromJSON:jsonResponse]];
+            }
+            if (successBlock) {
+                successBlock(result);
+            } else {
+                NSLog(@"Could not communicate API success to client due to no success parameter being passed");
+            }
+        } else {
+            // couldn't parse the json.
+            if (failureBlock) {
+                SOSEtsyResult *etsyListingError = [SOSEtsyApiClient handleError:nil withRequest:request andResponse:response responseJSON:JSON];
+                failureBlock(etsyListingError);
+            } else {
+                NSLog(@"Could not communicate API failure to client due to no failure block being present");
+            }
+        }
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        SOSEtsyResult *etsyListingError = [SOSEtsyApiClient handleError:error withRequest:request andResponse:response responseJSON:JSON];
+        if (failureBlock) {
+            failureBlock(etsyListingError);
+        } else {
+            NSLog(@"Could not communicate API failure to client due to no failure block being present");
+        }
+    }];
+    [operation start];
+    return operation;
+}
+
+- (void)basicSanityChecks:(SOSEtsyBaseRequest*)request
 {
     NSAssert(self.apiKey, @"apiKey MUST be set before making any requests. See initWithApiKey method");
+    NSAssert(request, @"The request being executed should not be nil");
 }
 
 + (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON
@@ -209,6 +265,12 @@
         image.full_height = [full_height intValue];
     }
     return image;
+}
+
++ (SOSEtsyShop*)digestShopFromJSON:(id)json
+{
+    SOSEtsyShop *shop = [[SOSEtsyShop alloc] init];
+    return shop;
 }
 
 @end

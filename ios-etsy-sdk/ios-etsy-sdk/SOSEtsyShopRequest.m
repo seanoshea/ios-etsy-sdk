@@ -14,12 +14,10 @@
  limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
+#import "SOSEtsyShopRequest.h"
 
-/**
- `SOSEtsyBaseRequest` includes any common functionality which is shared between
- API requests.
- */
-@interface SOSEtsyBaseRequest : NSObject
+@implementation SOSEtsyShopRequest
+
+@synthesize shopId = _shopId;
 
 @end

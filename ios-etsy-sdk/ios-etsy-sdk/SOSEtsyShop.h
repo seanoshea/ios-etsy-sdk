@@ -17,9 +17,13 @@
 #import <Foundation/Foundation.h>
 
 /**
- `SOSEtsyBaseRequest` includes any common functionality which is shared between
- API requests.
+ `SOSEtsyShop` defines a very limited amount of data about an Etsy Shop. A lot of information
+ on the shop is returned from the API server, but this class is really only interested in
+ whether or not the shop is on vacation or not.
  */
-@interface SOSEtsyBaseRequest : NSObject
+@interface SOSEtsyShop : NSObject
+
+@property (nonatomic, strong) NSString *vacationMessage;
+@property (nonatomic, assign) BOOL *isOnVacation;
 
 @end

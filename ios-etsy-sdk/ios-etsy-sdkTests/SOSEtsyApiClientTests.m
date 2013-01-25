@@ -37,9 +37,20 @@
     SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
     listingsRequest.shopId = @"5547124";
     [client getListings:listingsRequest successBlock:nil failureBlock:nil];
-    while (1)
+    while (0)
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5]];
     
+}
+
+- (void)testShopRequest
+{
+    SOSEtsyApiClient *client = [SOSEtsyApiClient sharedInstance];
+    [client initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+    SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
+    shopRequest.shopId = @"5547124";
+    [client getShop:shopRequest successBlock:nil failureBlock:nil];
+    while (1)
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5]];
 }
 
 @end

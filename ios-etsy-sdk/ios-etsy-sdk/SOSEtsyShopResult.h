@@ -17,9 +17,8 @@
 #import <Foundation/Foundation.h>
 
 /**
- `SOSEtsyBaseRequest` includes any common functionality which is shared between
- API requests.
+ `SOSEtsyShopResult` is returned as a result of making a SOSEtsyShopRequest.
  */
-@interface SOSEtsyBaseRequest : NSObject
+@interface SOSEtsyShopResult : SOSEtsyResult
 
 @end

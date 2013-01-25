@@ -14,12 +14,11 @@
  limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
+#import "SOSEtsyShop.h"
 
-/**
- `SOSEtsyBaseRequest` includes any common functionality which is shared between
- API requests.
- */
-@interface SOSEtsyBaseRequest : NSObject
+@implementation SOSEtsyShop
+
+@synthesize vacationMessage = _vacationMessage;
+@synthesize isOnVacation = _isOnVacation;
 
 @end

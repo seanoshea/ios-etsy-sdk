@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */; };
+		76305DB516B32746000014C1 /* SOSEtsyShopRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */; };
+		76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB716B3293E000014C1 /* SOSEtsyShop.h */; };
+		76305DBA16B3293E000014C1 /* SOSEtsyShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB816B3293E000014C1 /* SOSEtsyShop.m */; };
+		76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */; };
+		76305DBE16B32ADD000014C1 /* SOSEtsyShopResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */; };
 		7668EEB61698026700B6D54C /* SOSEtsyListingsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7668EEB71698026700B6D54C /* SOSEtsyResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3095167C413F002FA396 /* SOSEtsyResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7668EEB81698026700B6D54C /* SOSEtsyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C30A7167C43D7002FA396 /* SOSEtsyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +83,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShopRequest.h; sourceTree = "<group>"; };
+		76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShopRequest.m; sourceTree = "<group>"; };
+		76305DB716B3293E000014C1 /* SOSEtsyShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShop.h; sourceTree = "<group>"; };
+		76305DB816B3293E000014C1 /* SOSEtsyShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShop.m; sourceTree = "<group>"; };
+		76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShopResult.h; sourceTree = "<group>"; };
+		76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShopResult.m; sourceTree = "<group>"; };
 		769C3044167BF6B9002FA396 /* libios-etsy-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-etsy-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769C3047167BF6B9002FA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		769C304B167BF6B9002FA396 /* ios-etsy-sdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-etsy-sdk-Prefix.pch"; sourceTree = "<group>"; };
@@ -267,6 +279,8 @@
 				769C3099167C4165002FA396 /* SOSEtsyListing.m */,
 				769C309B167C4177002FA396 /* SOSEtsyListingImage.h */,
 				769C309C167C4177002FA396 /* SOSEtsyListingImage.m */,
+				76305DB716B3293E000014C1 /* SOSEtsyShop.h */,
+				76305DB816B3293E000014C1 /* SOSEtsyShop.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -278,6 +292,8 @@
 				769C30A2167C4218002FA396 /* SOSEtsyBaseRequest.m */,
 				769C30A4167C422A002FA396 /* SOSEtsyListingsRequest.h */,
 				769C30A5167C422A002FA396 /* SOSEtsyListingsRequest.m */,
+				76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */,
+				76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -287,6 +303,8 @@
 			children = (
 				76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */,
 				76BCEEF3167D41DF007CF802 /* SOSEtsyListingsResult.m */,
+				76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */,
+				76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */,
 			);
 			name = Results;
 			sourceTree = "<group>";
@@ -317,6 +335,9 @@
 				7668EEBC1698026700B6D54C /* SOSEtsyBaseRequest.h in Headers */,
 				7668EEBD1698026700B6D54C /* SOSEtsyListingsRequest.h in Headers */,
 				7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */,
+				76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */,
+				76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */,
+				76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +457,9 @@
 				76DA13F7168028250086847B /* AFURLConnectionOperation.m in Sources */,
 				76DA13F8168028250086847B /* AFXMLRequestOperation.m in Sources */,
 				76DA13F9168028250086847B /* UIImageView+AFNetworking.m in Sources */,
+				76305DB516B32746000014C1 /* SOSEtsyShopRequest.m in Sources */,
+				76305DBA16B3293E000014C1 /* SOSEtsyShop.m in Sources */,
+				76305DBE16B32ADD000014C1 /* SOSEtsyShopResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

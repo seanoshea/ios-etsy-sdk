@@ -18,6 +18,7 @@
 
 #import "SOSEtsyConstants.h"
 #import "SOSEtsyListingsRequest.h"
+#import "SOSEtsyShopRequest.h"
 
 /**
  `SOSEtsyApiClient` provides a _very_ simple read-only interface to the Etsy API.
@@ -62,4 +63,16 @@
                successBlock:(SOSEtsySuccessBlock)successBlock
                failureBlock:(SOSEtsyFailureBlock)failureBlock;
 
+#pragma mark Shop
+
+/**
+ Retrieves shop details
+ 
+ @param shopRequest defining the specifics of the shop request (indcludes details like shop id etc)
+ @param successBlock executed when the API call executes successfully.
+ @param failureBlock executed when the API call fails to execute.
+ */
+- (NSOperation*)getShop:(SOSEtsyShopRequest*)shopRequest
+               successBlock:(SOSEtsySuccessBlock)successBlock
+               failureBlock:(SOSEtsyFailureBlock)failureBlock;
 @end
