@@ -120,14 +120,11 @@
         if (jsonResponse) {
             SOSEtsyShopResult *result = [[SOSEtsyShopResult alloc] init];
             result.code = 200;
-            // great - got something usable back from the server. Time to parse out the listings.
+            // great - got something usable back from the server. Time to parse out the shop.
             if ([jsonResponse isKindOfClass:[NSArray class]]) {
-                for (id listing in jsonResponse) {
-                    [result.results addObject:[SOSEtsyApiClient digestListingFromJSON:listing]];
+                for (id shop in jsonResponse) {
+                    [result.results addObject:[SOSEtsyApiClient digestShopFromJSON:shop]];
                 }
-            } else {
-                // must be just one active listing
-                [result.results addObject:[SOSEtsyApiClient digestListingFromJSON:jsonResponse]];
             }
             if (successBlock) {
                 successBlock(result);
@@ -270,6 +267,14 @@
 + (SOSEtsyShop*)digestShopFromJSON:(id)json
 {
     SOSEtsyShop *shop = [[SOSEtsyShop alloc] init];
+    id is_vacation = [json objectForKey:@"is_vacation"];
+    if (is_vacation) {
+        shop.isOnVacation = [is_vacation boolValue];
+    }
+    id vacation_message = [json objectForKey:@"vacation_message"];
+    if (vacation_message) {
+        shop.vacationMessage = vacation_message;
+    }
     return shop;
 }
 
