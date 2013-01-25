@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */; };
+		76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DB516B32746000014C1 /* SOSEtsyShopRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */; };
-		76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB716B3293E000014C1 /* SOSEtsyShop.h */; };
+		76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB716B3293E000014C1 /* SOSEtsyShop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DBA16B3293E000014C1 /* SOSEtsyShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB816B3293E000014C1 /* SOSEtsyShop.m */; };
-		76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */; };
+		76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DBE16B32ADD000014C1 /* SOSEtsyShopResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */; };
 		7668EEB61698026700B6D54C /* SOSEtsyListingsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7668EEB71698026700B6D54C /* SOSEtsyResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3095167C413F002FA396 /* SOSEtsyResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -333,11 +333,11 @@
 				7668EEBA1698026700B6D54C /* SOSEtsyListing.h in Headers */,
 				7668EEBB1698026700B6D54C /* SOSEtsyListingImage.h in Headers */,
 				7668EEBC1698026700B6D54C /* SOSEtsyBaseRequest.h in Headers */,
-				7668EEBD1698026700B6D54C /* SOSEtsyListingsRequest.h in Headers */,
-				7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */,
 				76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */,
 				76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */,
 				76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */,
+				7668EEBD1698026700B6D54C /* SOSEtsyListingsRequest.h in Headers */,
+				7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
