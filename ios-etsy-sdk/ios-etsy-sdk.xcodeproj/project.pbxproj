@@ -41,8 +41,6 @@
 		769C30A3167C4218002FA396 /* SOSEtsyBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C30A2167C4218002FA396 /* SOSEtsyBaseRequest.m */; };
 		769C30A6167C422A002FA396 /* SOSEtsyListingsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C30A5167C422A002FA396 /* SOSEtsyListingsRequest.m */; };
 		769C30A9167C43D7002FA396 /* SOSEtsyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C30A8167C43D7002FA396 /* SOSEtsyConstants.m */; };
-		76A349D516A2315000245820 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D416A2315000245820 /* SystemConfiguration.framework */; };
-		76A349D816A2317E00245820 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D716A2317E00245820 /* MobileCoreServices.framework */; };
 		76BCEEF4167D41DF007CF802 /* SOSEtsyListingsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BCEEF3167D41DF007CF802 /* SOSEtsyListingsResult.m */; };
 		76DA13F1168028250086847B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3077167C3F26002FA396 /* AFHTTPClient.m */; };
 		76DA13F2168028250086847B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3079167C3F26002FA396 /* AFHTTPRequestOperation.m */; };
@@ -134,8 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76A349D816A2317E00245820 /* MobileCoreServices.framework in Frameworks */,
-				76A349D516A2315000245820 /* SystemConfiguration.framework in Frameworks */,
 				769C3048167BF6B9002FA396 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +522,7 @@
 				DSTROOT = /tmp/ios_etsy_sdk.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-etsy-sdk/ios-etsy-sdk-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -539,6 +536,7 @@
 				DSTROOT = /tmp/ios_etsy_sdk.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-etsy-sdk/ios-etsy-sdk-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
