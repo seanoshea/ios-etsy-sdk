@@ -18,28 +18,14 @@
 
 @implementation SOSEtsyListing
 
-@synthesize listingImages = _listingImages;
-@synthesize creationTimestamp = _creationTimestamp;
-@synthesize currencyCode = _currencyCode;
-@synthesize description = _description;
-@synthesize listingId = _listingId;
-@synthesize price = _price;
-@synthesize quantity = _quantity;
-@synthesize title = _title;
-@synthesize url = _url;
-@synthesize whenMade = _whenMade;
-
 - (id)init
 {
 	self = [super init];
-	
 	if (!self) {
 		return nil;
 	}
-	
 	// initialization
 	_listingImages = [NSMutableArray array];
-
     return self;
 }
 

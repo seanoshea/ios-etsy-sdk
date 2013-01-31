@@ -18,13 +18,4 @@
 
 @implementation SOSEtsyListingImage
 
-@synthesize url_170x135 = _url_170x135;
-@synthesize url_570xN = _url_570xN;
-@synthesize url_75x75 = _url_75x75;
-@synthesize url_fullxfull = _url_fullxfull;
-@synthesize full_height = _full_height;
-@synthesize full_width = _full_width;
-@synthesize listing_id = _listing_id;
-@synthesize listing_image_id = _listing_image_id;
-
 @end
