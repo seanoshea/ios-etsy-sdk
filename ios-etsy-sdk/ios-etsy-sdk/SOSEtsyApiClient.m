@@ -28,6 +28,7 @@
 
 - (void)basicSanityChecks:(SOSEtsyBaseRequest*)request;
 - (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON;
+
 @end
 
 @implementation SOSEtsyApiClient
