@@ -18,9 +18,6 @@
 
 @implementation SOSEtsyResult
 
-@synthesize results = _results;
-@synthesize code = _code;
-
 - (id)init
 {
     if ((self = [super init])) {

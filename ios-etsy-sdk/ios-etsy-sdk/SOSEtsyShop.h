@@ -24,6 +24,6 @@
 @interface SOSEtsyShop : NSObject
 
 @property (nonatomic, strong) NSString *vacationMessage;
-@property (nonatomic, assign) BOOL *isOnVacation;
+@property (nonatomic, assign) BOOL isOnVacation;
 
 @end

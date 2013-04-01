@@ -18,6 +18,4 @@
 
 @implementation SOSEtsyListingsRequest
 
-@synthesize shopId = _shopId;
-
 @end

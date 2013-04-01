@@ -18,7 +18,4 @@
 
 @implementation SOSEtsyShop
 
-@synthesize vacationMessage = _vacationMessage;
-@synthesize isOnVacation = _isOnVacation;
-
 @end
