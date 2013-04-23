@@ -14,21 +14,14 @@
  limitations under the License.
  */
 
-#import "SOSEtsyApiClientTests.h"
+#import "Kiwi.h"
 
-#import "SOSEtsyApiClient.h"
+SPEC_BEGIN(SOSEtsyApiClientSpec)
 
+SPEC_END
+
+/*
 @implementation SOSEtsyApiClientTests
-
-- (void)setUp
-{
-    [super setUp];
-}
-
-- (void)tearDown
-{
-    [super tearDown];
-}
 
 - (void)testListingsRequest
 {
@@ -37,9 +30,6 @@
     SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
     listingsRequest.shopId = @"5547124";
     [client getListings:listingsRequest successBlock:nil failureBlock:nil];
-    while (0)
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5]];
-    
 }
 
 - (void)testShopRequest
@@ -49,8 +39,7 @@
     SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
     shopRequest.shopId = @"5547124";
     [client getShop:shopRequest successBlock:nil failureBlock:nil];
-    while (1)
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:5]];
 }
 
 @end
+*/
