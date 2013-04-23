@@ -40,7 +40,6 @@
 		769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C305D167BF6BA002FA396 /* libios-etsy-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3044167BF6B9002FA396 /* libios-etsy-sdk.a */; };
 		769C3063167BF6BA002FA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 769C3061167BF6BA002FA396 /* InfoPlist.strings */; };
-		769C3066167BF6BA002FA396 /* SOSEtsyApiClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3065167BF6BA002FA396 /* SOSEtsyApiClientTests.m */; };
 		769C3097167C413F002FA396 /* SOSEtsyResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3096167C413F002FA396 /* SOSEtsyResult.m */; };
 		769C309A167C4165002FA396 /* SOSEtsyListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3099167C4165002FA396 /* SOSEtsyListing.m */; };
 		769C309D167C4177002FA396 /* SOSEtsyListingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C309C167C4177002FA396 /* SOSEtsyListingImage.m */; };
@@ -49,6 +48,7 @@
 		769C30A6167C422A002FA396 /* SOSEtsyListingsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C30A5167C422A002FA396 /* SOSEtsyListingsRequest.m */; };
 		769C30A9167C43D7002FA396 /* SOSEtsyConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C30A8167C43D7002FA396 /* SOSEtsyConstants.m */; };
 		76BCEEF4167D41DF007CF802 /* SOSEtsyListingsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BCEEF3167D41DF007CF802 /* SOSEtsyListingsResult.m */; };
+		76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */; };
 		76DA13F1168028250086847B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3077167C3F26002FA396 /* AFHTTPClient.m */; };
 		76DA13F2168028250086847B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C3079167C3F26002FA396 /* AFHTTPRequestOperation.m */; };
 		76DA13F3168028250086847B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C307B167C3F26002FA396 /* AFImageRequestOperation.m */; };
@@ -121,7 +121,6 @@
 		769C3056167BF6B9002FA396 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		769C3060167BF6BA002FA396 /* ios-etsy-sdkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-etsy-sdkTests-Info.plist"; sourceTree = "<group>"; };
 		769C3062167BF6BA002FA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		769C3065167BF6BA002FA396 /* SOSEtsyApiClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyApiClientTests.m; sourceTree = "<group>"; };
 		769C3076167C3F26002FA396 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = Dependencies/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
 		769C3077167C3F26002FA396 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = Dependencies/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
 		769C3078167C3F26002FA396 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = Dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -159,6 +158,7 @@
 		76A349D716A2317E00245820 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyListingsResult.h; sourceTree = "<group>"; };
 		76BCEEF3167D41DF007CF802 /* SOSEtsyListingsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyListingsResult.m; sourceTree = "<group>"; };
+		76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyApiClientSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				764D54BD17272BA500D45D7A /* Dependencies */,
-				769C3065167BF6BA002FA396 /* SOSEtsyApiClientTests.m */,
+				76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */,
 				769C305F167BF6BA002FA396 /* Supporting Files */,
 			);
 			path = "ios-etsy-sdkTests";
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769C3066167BF6BA002FA396 /* SOSEtsyApiClientTests.m in Sources */,
+				76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
