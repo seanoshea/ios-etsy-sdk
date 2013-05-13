@@ -21,7 +21,7 @@
 - (id)init
 {
     if ((self = [super init])) {
-        _results = [[NSMutableArray alloc] init];
+        _results = @{};
         _code = 500;
     }
     return self;

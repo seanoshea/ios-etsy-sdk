@@ -18,28 +18,12 @@
 
 SPEC_BEGIN(SOSEtsyApiClientSpec)
 
+describe(@"A Sample Test", ^{
+    it(@"is pretty cool", ^{
+        NSUInteger a = 16;
+        NSUInteger b = 26;
+        [[theValue(a + b) should] equal:theValue(43)];
+    });
+});
+
 SPEC_END
-
-/*
-@implementation SOSEtsyApiClientTests
-
-- (void)testListingsRequest
-{
-    SOSEtsyApiClient *client = [SOSEtsyApiClient sharedInstance];
-    [client initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
-    SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
-    listingsRequest.shopId = @"5547124";
-    [client getListings:listingsRequest successBlock:nil failureBlock:nil];
-}
-
-- (void)testShopRequest
-{
-    SOSEtsyApiClient *client = [SOSEtsyApiClient sharedInstance];
-    [client initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
-    SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
-    shopRequest.shopId = @"5547124";
-    [client getShop:shopRequest successBlock:nil failureBlock:nil];
-}
-
-@end
-*/
