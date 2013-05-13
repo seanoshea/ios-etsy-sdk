@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761FC76B17419F4D009EBEDC /* UIKit.framework */; };
 		76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DB516B32746000014C1 /* SOSEtsyShopRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */; };
 		76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB716B3293E000014C1 /* SOSEtsyShop.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		761FC76B17419F4D009EBEDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShopRequest.h; sourceTree = "<group>"; };
 		76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShopRequest.m; sourceTree = "<group>"; };
 		76305DB716B3293E000014C1 /* SOSEtsyShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShop.h; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
 				764D54DB1727304100D45D7A /* libKiwi.a in Frameworks */,
 				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
 				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
@@ -233,10 +236,11 @@
 		769C3046167BF6B9002FA396 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76A349D716A2317E00245820 /* MobileCoreServices.framework */,
-				76A349D416A2315000245820 /* SystemConfiguration.framework */,
 				769C3047167BF6B9002FA396 /* Foundation.framework */,
+				76A349D716A2317E00245820 /* MobileCoreServices.framework */,
 				769C3056167BF6B9002FA396 /* SenTestingKit.framework */,
+				76A349D416A2315000245820 /* SystemConfiguration.framework */,
+				761FC76B17419F4D009EBEDC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -654,6 +658,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-etsy-sdk/ios-etsy-sdk-Prefix.pch";
 				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
 				WRAPPER_EXTENSION = octest;
@@ -670,6 +675,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-etsy-sdk/ios-etsy-sdk-Prefix.pch";
 				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
 				WRAPPER_EXTENSION = octest;

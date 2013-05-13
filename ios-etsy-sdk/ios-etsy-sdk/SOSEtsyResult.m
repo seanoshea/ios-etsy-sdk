@@ -21,7 +21,7 @@
 - (id)init
 {
     if ((self = [super init])) {
-        _results = @{};
+        _results = [@{} mutableCopy];
         _code = 500;
     }
     return self;
