@@ -21,7 +21,7 @@
 SPEC_BEGIN(SOSEtsyApiClientSpec)
 
 describe(@"A Listings Request", ^{
-    it(@"returns a viable response when presented with a viable API key", ^{
+    it(@"returns a viable response", ^{
         [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
         SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
         listingsRequest.shopId = @"5547100";
@@ -34,6 +34,25 @@ describe(@"A Listings Request", ^{
             returnedError = error;
         }];
 
+        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
+        [[expectFutureValue(returnedError) shouldEventually] beNil];
+    });
+});
+
+describe(@"A Shop Request", ^{
+    it(@"returns a viable response", ^{
+        [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+        SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
+        shopRequest.shopId = @"5547124";
+        
+        __block SOSEtsyResult *returnedResult;
+        __block SOSEtsyResult *returnedError;
+        [[SOSEtsyApiClient sharedInstance] getShop:shopRequest successBlock:^(SOSEtsyResult *result) {
+            returnedResult = result;
+        } failureBlock:^(SOSEtsyResult *error) {
+            returnedError = error;
+        }];
+        
         [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
         [[expectFutureValue(returnedError) shouldEventually] beNil];
     });
