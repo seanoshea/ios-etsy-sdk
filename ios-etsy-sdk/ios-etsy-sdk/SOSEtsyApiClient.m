@@ -24,10 +24,16 @@
 #import "SOSEtsyShop.h"
 #import "SOSEtsyShopResult.h"
 
-@interface SOSEtsyApiClient (Private)
+@interface SOSEtsyApiClient ()
+
+/**
+ To interact with the Etsy API, client developers MUST provide an API key.
+ See http://www.etsy.com/developers for details on how to get API keys.
+ */
+@property (nonatomic, copy) NSString *apiKey;
 
 - (void)basicSanityChecks:(SOSEtsyBaseRequest*)request;
-- (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON;
++ (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON;
 
 @end
 
@@ -45,7 +51,7 @@
 
 - (void)initWithApiKey:(NSString*)apiKey
 {
-    [SOSEtsyApiClient sharedInstance].apiKey = apiKey;
+    self.apiKey = apiKey;
 }
 
 - (NSOperation*)getListings:(SOSEtsyListingsRequest*)listingsRequest
@@ -58,8 +64,10 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
     NSString *path = [NSString stringWithFormat:@"shops/%@/listings/active", listingsRequest.shopId];
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
-    NSDictionary *parameters = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[SOSEtsyApiClient sharedInstance].apiKey, @"Images", nil] forKeys:[NSArray arrayWithObjects:@"api_key", @"includes", nil]];
-    NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET" path:path parameters:parameters];
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET" path:path parameters:@{
+                                    @"api_key": self.apiKey,
+                                    @"includes": @"Images"
+                                    }];
 
     // execute the request
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
@@ -112,8 +120,10 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
     NSString *path = [NSString stringWithFormat:@"shops/%@", shopRequest.shopId];
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
-    NSDictionary *parameters = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:[SOSEtsyApiClient sharedInstance].apiKey, nil] forKeys:[NSArray arrayWithObjects:@"api_key", nil]];
-    NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET" path:path parameters:parameters];
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET" path:path parameters:@{
+                                    @"api_key": self.apiKey,
+                                    @"includes": @"Images"
+                                    }];
     
     // execute the request
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {

@@ -29,12 +29,6 @@
 @interface SOSEtsyApiClient : NSObject
 
 /**
- To interact with the Etsy API, client developers MUST provide an API key.
- See http://www.etsy.com/developers for details on how to get API keys.
- */
-@property (nonatomic, retain) NSString *apiKey;
-
-/**
  Singleton accessor method for the SOSEtsyApiClient
  
  @return an instance of a SOSEtsyApiClient

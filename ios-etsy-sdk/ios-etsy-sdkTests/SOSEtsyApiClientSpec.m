@@ -22,14 +22,13 @@ SPEC_BEGIN(SOSEtsyApiClientSpec)
 
 describe(@"A Listings Request", ^{
     it(@"returns a viable response when presented with a viable API key", ^{
-        SOSEtsyApiClient *client = [SOSEtsyApiClient sharedInstance];
-        [client initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+        [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
         SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
         listingsRequest.shopId = @"5547100";
         
         __block SOSEtsyResult *returnedResult;
         __block SOSEtsyResult *returnedError;
-        [client getListings:listingsRequest successBlock:^(SOSEtsyResult *result) {
+        [[SOSEtsyApiClient sharedInstance] getListings:listingsRequest successBlock:^(SOSEtsyResult *result) {
             returnedResult = result;
         } failureBlock:^(SOSEtsyResult *error) {
             returnedError = error;
