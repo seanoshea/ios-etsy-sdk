@@ -16,13 +16,27 @@
 
 #import "Kiwi.h"
 
+#import "SOSEtsyApiClient.h"
+
 SPEC_BEGIN(SOSEtsyApiClientSpec)
 
-describe(@"A Sample Test", ^{
-    it(@"is pretty cool", ^{
-        NSUInteger a = 16;
-        NSUInteger b = 26;
-        [[theValue(a + b) should] equal:theValue(42)];
+describe(@"A Listings Request", ^{
+    it(@"returns a viable response when presented with a viable API key", ^{
+        SOSEtsyApiClient *client = [SOSEtsyApiClient sharedInstance];
+        [client initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+        SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
+        listingsRequest.shopId = @"5547100";
+        
+        __block SOSEtsyResult *returnedResult;
+        __block SOSEtsyResult *returnedError;
+        [client getListings:listingsRequest successBlock:^(SOSEtsyResult *result) {
+            returnedResult = result;
+        } failureBlock:^(SOSEtsyResult *error) {
+            returnedError = error;
+        }];
+
+        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
+        [[expectFutureValue(returnedError) shouldEventually] beNil];
     });
 });
 
