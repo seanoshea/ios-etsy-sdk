@@ -27,6 +27,7 @@
 		762830841742D8B000546C57 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830711742D8B000546C57 /* AFXMLRequestOperation.m */; };
 		762830851742D8B000546C57 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 762830721742D8B000546C57 /* UIImageView+AFNetworking.h */; };
 		762830861742D8B000546C57 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830731742D8B000546C57 /* UIImageView+AFNetworking.m */; };
+		762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830881742D91D00546C57 /* SOSTestURLInterceptor.m */; };
 		76305DB416B32746000014C1 /* SOSEtsyShopRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DB516B32746000014C1 /* SOSEtsyShopRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */; };
 		76305DB916B3293E000014C1 /* SOSEtsyShop.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DB716B3293E000014C1 /* SOSEtsyShop.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,6 +127,8 @@
 		762830711742D8B000546C57 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = Dependencies/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		762830721742D8B000546C57 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "Dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		762830731742D8B000546C57 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "Dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		762830871742D91D00546C57 /* SOSTestURLInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSTestURLInterceptor.h; sourceTree = "<group>"; };
+		762830881742D91D00546C57 /* SOSTestURLInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSTestURLInterceptor.m; sourceTree = "<group>"; };
 		76305DB216B32746000014C1 /* SOSEtsyShopRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShopRequest.h; sourceTree = "<group>"; };
 		76305DB316B32746000014C1 /* SOSEtsyShopRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShopRequest.m; sourceTree = "<group>"; };
 		76305DB716B3293E000014C1 /* SOSEtsyShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShop.h; sourceTree = "<group>"; };
@@ -298,6 +301,8 @@
 			children = (
 				764D54BD17272BA500D45D7A /* Dependencies */,
 				76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */,
+				762830871742D91D00546C57 /* SOSTestURLInterceptor.h */,
+				762830881742D91D00546C57 /* SOSTestURLInterceptor.m */,
 				769C305F167BF6BA002FA396 /* Supporting Files */,
 			);
 			path = "ios-etsy-sdkTests";
@@ -559,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */,
+				762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
