@@ -16,10 +16,10 @@
 
 #import "SOSTestURLInterceptor.h"
 
-NSString const *shopKeyConstant = @"";
-NSString const *listingsKeyConstant = @"";
-NSString const *shopResponse = @"";
-NSString const *listingsResponse = @"";
+NSString *shopKeyConstant = @"shopKeyConstant";
+NSString *listingsKeyConstant = @"listingsKeyConstant";
+NSString *shopResponse = @"{}";
+NSString *listingsResponse = @"{}";
 
 @interface SOSTestURLInterceptor()
 
@@ -37,6 +37,7 @@ NSString const *listingsResponse = @"";
     dispatch_once(&onceToken, ^{
         interceptor = [[self alloc] init];
         interceptor.responses = [[NSMutableDictionary alloc] init];
+        interceptor.responseKey = @"";
     });
     return interceptor;
 }
