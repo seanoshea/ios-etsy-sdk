@@ -51,6 +51,7 @@
 
 - (void)initWithApiKey:(NSString*)apiKey
 {
+    NSParameterAssert(apiKey);
     self.apiKey = apiKey;
 }
 
@@ -58,6 +59,7 @@
                successBlock:(SOSEtsySuccessBlock)successBlock
                failureBlock:(SOSEtsyFailureBlock)failureBlock
 {
+    NSParameterAssert(successBlock);
     [self basicSanityChecks:listingsRequest];
 
     // generate the url
@@ -114,6 +116,7 @@
            successBlock:(SOSEtsySuccessBlock)successBlock
            failureBlock:(SOSEtsyFailureBlock)failureBlock
 {
+    NSParameterAssert(successBlock);
     [self basicSanityChecks:shopRequest];
     
     // generate the url

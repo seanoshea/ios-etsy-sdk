@@ -77,11 +77,16 @@ NSString *listingsResponse = @"{}";
 
 - (void)setResponseKey:(NSString*)key
 {
+    NSParameterAssert(key);
+
     self.responseKey = key;
 }
 
 - (void)addResponse:(NSString*)response forKey:(NSString*)key;
 {
+    NSParameterAssert(key);
+    NSParameterAssert(response);
+    
     self.responses[key] = response;
 }
 
