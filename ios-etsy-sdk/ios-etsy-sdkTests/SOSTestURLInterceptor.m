@@ -16,7 +16,30 @@
 
 #import "SOSTestURLInterceptor.h"
 
+NSString const *shopKeyConstant = @"";
+NSString const *listingsKeyConstant = @"";
+NSString const *shopResponse = @"";
+NSString const *listingsResponse = @"";
+
+@interface SOSTestURLInterceptor()
+
+@property (nonatomic, strong) NSMutableDictionary *responses;
+@property (nonatomic, strong) NSString *responseKey;
+
+@end
+
 @implementation SOSTestURLInterceptor
+
++ (SOSTestURLInterceptor*)sharedInterceptor
+{
+    static dispatch_once_t onceToken;
+    static SOSTestURLInterceptor *interceptor;
+    dispatch_once(&onceToken, ^{
+        interceptor = [[self alloc] init];
+        interceptor.responses = [[NSMutableDictionary alloc] init];
+    });
+    return interceptor;
+}
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
@@ -35,18 +58,30 @@
 
 - (void)startLoading
 {
+    NSData *responseData = [self.responses[self.responseKey] dataUsingEncoding:NSUTF8StringEncoding];
     NSURLResponse *response = [[NSURLResponse alloc] initWithURL:self.request.URL
                                                         MIMEType:@"text/plain"
                                            expectedContentLength:0                                                textEncodingName:@"UTF8"];
     [self.client URLProtocol:self
           didReceiveResponse:response
           cacheStoragePolicy:NSURLCacheStorageNotAllowed];
+    [self.client URLProtocol:self didLoadData:responseData];
     [self.client URLProtocolDidFinishLoading:self];
 }
 
-- (void)stopLoading {
-    
+- (void)stopLoading
+{
     [self.client URLProtocolDidFinishLoading:self];
+}
+
+- (void)setResponseKey:(NSString*)key
+{
+    self.responseKey = key;
+}
+
+- (void)addResponse:(NSString*)response forKey:(NSString*)key;
+{
+    self.responses[key] = response;
 }
 
 @end

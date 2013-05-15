@@ -16,6 +16,15 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString const *shopKeyConstant;
+extern NSString const *listingsKeyConstant;
+extern NSString const *shopResponse;
+extern NSString const *listingsResponse;
+
 @interface SOSTestURLInterceptor : NSURLProtocol
+
++ (SOSTestURLInterceptor*)sharedInterceptor;
+- (void)setResponseKey:(NSString*)key;
+- (void)addResponse:(NSString*)response forKey:(NSString*)key;
 
 @end

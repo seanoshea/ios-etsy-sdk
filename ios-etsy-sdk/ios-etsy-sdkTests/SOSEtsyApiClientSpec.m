@@ -17,6 +17,7 @@
 #import "Kiwi.h"
 
 #import "SOSEtsyApiClient.h"
+#import "SOSTestURLInterceptor.h"
 
 SPEC_BEGIN(SOSEtsyApiClientSpec)
 
@@ -41,6 +42,31 @@ describe(@"A Listings Request", ^{
 
 describe(@"A Shop Request", ^{
     it(@"returns a viable response", ^{
+        [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+        SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
+        shopRequest.shopId = @"5547124";
+        
+        __block SOSEtsyResult *returnedResult;
+        __block SOSEtsyResult *returnedError;
+        [[SOSEtsyApiClient sharedInstance] getShop:shopRequest successBlock:^(SOSEtsyResult *result) {
+            returnedResult = result;
+        } failureBlock:^(SOSEtsyResult *error) {
+            returnedError = error;
+        }];
+        
+        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
+        [[expectFutureValue(returnedError) shouldEventually] beNil];
+    });
+});
+
+describe(@"A Shop Request", ^{
+    it(@"should be able to parse a viable response", ^{
+        
+        [NSURLProtocol registerClass:[SOSTestURLInterceptor class]];
+        
+        [[SOSTestURLInterceptor sharedInterceptor] addResponse:shopResponse forKey:shopKeyConstant];
+        [[SOSTestURLInterceptor sharedInterceptor] setResponseKey:shopKeyConstant];
+        
         [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
         SOSEtsyShopRequest *shopRequest = [[SOSEtsyShopRequest alloc] init];
         shopRequest.shopId = @"5547124";
