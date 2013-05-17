@@ -24,13 +24,13 @@
  */
 @interface SOSEtsyListingImage : SOSEtsyBaseModel
 
-@property (nonatomic, strong) NSString *url_170x135;
-@property (nonatomic, strong) NSString *url_570xN;
-@property (nonatomic, strong) NSString *url_75x75;
-@property (nonatomic, strong) NSString *url_fullxfull;
-@property (nonatomic, assign) NSInteger full_height;
-@property (nonatomic, assign) NSInteger full_width;
-@property (nonatomic, strong) NSString *listing_id;
-@property (nonatomic, strong) NSString *listing_image_id;
+@property (nonatomic, copy) NSString *url_170x135;
+@property (nonatomic, copy) NSString *url_570xN;
+@property (nonatomic, copy) NSString *url_75x75;
+@property (nonatomic, copy) NSString *url_fullxfull;
+@property (nonatomic) NSInteger full_height;
+@property (nonatomic) NSInteger full_width;
+@property (nonatomic, copy) NSString *listing_id;
+@property (nonatomic, copy) NSString *listing_image_id;
 
 @end

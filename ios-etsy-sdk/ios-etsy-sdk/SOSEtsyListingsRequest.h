@@ -27,6 +27,6 @@
 /**
  Id by which the store is uniquiely identified by Etsy.
  */
-@property (nonatomic, strong) NSString *shopId;
+@property (nonatomic, copy) NSString *shopId;
 
 @end

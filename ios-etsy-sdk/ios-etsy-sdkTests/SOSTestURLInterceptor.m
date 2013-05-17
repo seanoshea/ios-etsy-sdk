@@ -24,7 +24,7 @@ NSString *listingsResponse = @"{}";
 @interface SOSTestURLInterceptor()
 
 @property (nonatomic, strong) NSMutableDictionary *responses;
-@property (nonatomic, strong) NSString *responseKey;
+@property (nonatomic, copy) NSString *responseKey;
 
 @end
 
