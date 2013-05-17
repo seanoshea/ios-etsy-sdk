@@ -40,6 +40,31 @@ describe(@"A Listings Request", ^{
     });
 });
 
+describe(@"A Listings Request", ^{
+    it(@"should be able to parse a viable response", ^{
+        
+        [NSURLProtocol registerClass:[SOSTestURLInterceptor class]];
+        
+        [[SOSTestURLInterceptor sharedInterceptor] addResponse:listingsResponse forKey:listingsKeyConstant];
+        [[SOSTestURLInterceptor sharedInterceptor] setResponseKey:listingsKeyConstant];
+        
+        [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];
+        SOSEtsyListingsRequest *listingsRequest = [[SOSEtsyListingsRequest alloc] init];
+        listingsRequest.shopId = @"5547100";
+        
+        __block SOSEtsyResult *returnedResult;
+        __block SOSEtsyResult *returnedError;
+        [[SOSEtsyApiClient sharedInstance] getListings:listingsRequest successBlock:^(SOSEtsyResult *result) {
+            returnedResult = result;
+        } failureBlock:^(SOSEtsyResult *error) {
+            returnedError = error;
+        }];
+        
+        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
+        [[expectFutureValue(returnedError) shouldEventually] beNil];
+    });
+});
+
 describe(@"A Shop Request", ^{
     it(@"returns a viable response", ^{
         [[SOSEtsyApiClient sharedInstance] initWithApiKey:@"l5k8bfu3uyvjy80n0o547zlq"];

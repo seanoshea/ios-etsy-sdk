@@ -18,13 +18,13 @@
 
 NSString *shopKeyConstant = @"shopKeyConstant";
 NSString *listingsKeyConstant = @"listingsKeyConstant";
-NSString *shopResponse = @"{}";
-NSString *listingsResponse = @"{}";
+NSString *shopResponse = @"{\"count\":1,\"results\":[{\"shop_id\":5547117,\"shop_name\":\"Uniquelywashers\",\"user_id\":7387574,\"creation_tsz\":1242422529,\"title\":\"Unique Washers\",\"policy_refunds\":\"I will be happy to exchange, fix, or refund any item that you are not happy with, shipping will not be refunded.  No refunds for items lost or damaged in shipping.\",\"policy_additional\":\"I am happy to take custom orders just contact me at dradar0669@comcast.net and lets talk about it.\",\"policy_seller_info\":\"\",\"policy_updated_tsz\":1364678451,\"vacation_autoreply\":\"I&#39;m on vacation but will get your questions answered as soon as I get back.  Thanks You\",\"url\":\"a\",\"image_url_760x100\":\"s\",\"num_favorers\":307,\"has_tax_preferences\":false,\"languages\":[\"en-US\"],\"error_messages\":[\"Access denied on association Images\"]}],\"params\":{\"shop_id\":\"5547117\"},\"type\":\"Shop\",\"pagination\":{}}";
+NSString *listingsResponse = @"{\"count\": 24,\"results\": [{\"listing_id\": 127985847,\"state\": \"active\",\"user_id\": 7387574,\"category_id\": 68898588,\"title\": \"Alittle nutty earrings\",\"description\": \"Starburst washers, or lock washers, enhance to the look of a basic nut. The washer surrounds the nut giving it a special look. These are fun everyday earrings. 1.5 inches of dangle and bling.\",\"creation_tsz\": 1364679197,\"ending_tsz\": 1375156800,\"original_creation_tsz\": 1364679197,\"last_modified_tsz\": 1364679197,\"price\": \"5.00\",\"currency_code\": \"USD\",\"quantity\": 1,\"tags\": [\"steampunk\",\"repurposed\",\"hippy\"],\"category_path\": [\"Jewelry\",\"Earrings\",\"Metal\"],\"category_path_ids\": [68887482,69151501,68898588],\"materials\": [\"nickel\",\"metal\",\"silver plated jump rings\"],\"shop_section_id\": 6699266,\"featured_rank\": 0,\"state_tsz\": 1364679197,\"url\": \"http:\/\/www.etsy.com\/listing\/127985847\/alittle-nutty-earrings?utm_source=krissytosi&utm_medium=api&utm_campaign=api\",\"views\": 10,\"num_favorers\": 0,\"processing_min\": 3,\"processing_max\": 5,\"who_made\": \"i_did\",\"is_supply\": \"false\",\"when_made\": \"2010_2013\",\"is_private\": false,\"recipient\": null,\"occasion\": null,\"style\": [\"Industrial\",\"Steampunk\"],\"non_taxable\": false,\"is_digital\": false,\"file_data\": \"\",\"has_variations\": false,\"Images\": [{\"listing_image_id\": 443739416,\"hex_code\": \"86714F\",\"red\": 134,\"green\": 113,\"blue\": 79,\"hue\": 37,\"saturation\": 41,\"brightness\": 52,\"is_black_and_white\": false,\"creation_tsz\": 1364679197,\"listing_id\": 127985847,\"rank\": 1,\"url_75x75\": \"http:\/\/img0.etsystatic.com\/013\/0\/5547117\/il_75x75.443739416_krih.jpg\",\"url_170x135\": \"http:\/\/img0.etsystatic.com\/013\/0\/5547117\/il_170x135.443739416_krih.jpg\",\"url_570xN\": \"http:\/\/img0.etsystatic.com\/013\/0\/5547117\/il_570xN.443739416_krih.jpg\",\"url_fullxfull\": \"http:\/\/img0.etsystatic.com\/013\/0\/5547117\/il_fullxfull.443739416_krih.jpg\",\"full_height\": 1500,\"full_width\": 1209}]}]}";
 
 @interface SOSTestURLInterceptor()
 
 @property (nonatomic, strong) NSMutableDictionary *responses;
-@property (nonatomic, copy) NSString *responseKey;
+@property (nonatomic, copy) NSString *key;
 
 @end
 
@@ -59,9 +59,10 @@ NSString *listingsResponse = @"{}";
 
 - (void)startLoading
 {
-    NSData *responseData = [self.responses[self.responseKey] dataUsingEncoding:NSUTF8StringEncoding];
+    SOSTestURLInterceptor *interceptor = [SOSTestURLInterceptor sharedInterceptor];
+    NSData *responseData = [interceptor.responses[interceptor.key] dataUsingEncoding:NSUTF8StringEncoding];
     NSURLResponse *response = [[NSURLResponse alloc] initWithURL:self.request.URL
-                                                        MIMEType:@"text/plain"
+                                                        MIMEType:@"text/json"
                                            expectedContentLength:0                                                textEncodingName:@"UTF8"];
     [self.client URLProtocol:self
           didReceiveResponse:response
@@ -75,11 +76,11 @@ NSString *listingsResponse = @"{}";
     [self.client URLProtocolDidFinishLoading:self];
 }
 
-- (void)setResponseKey:(NSString*)key
+- (void)setResponseKey:(NSString*)responseKey
 {
-    NSParameterAssert(key);
+    NSParameterAssert(responseKey);
 
-    self.responseKey = key;
+    self.key = responseKey;
 }
 
 - (void)addResponse:(NSString*)response forKey:(NSString*)key;
