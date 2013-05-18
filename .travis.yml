@@ -1,4 +1,4 @@
 language: objective-c
 before_install:
-  - cd ios-etsy-sdk
   - git submodule update --init --recursive
+  - cd ios-etsy-sdk
