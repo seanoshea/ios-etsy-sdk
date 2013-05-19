@@ -1,5 +1,6 @@
 language: objective-c
 before_install:
   - git submodule update --init --recursive
+  - chmod -R 777 travis
 before_script: travis/before_script.sh
 script: travis/script.sh
