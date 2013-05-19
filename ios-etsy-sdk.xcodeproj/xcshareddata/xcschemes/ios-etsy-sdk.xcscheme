@@ -20,6 +20,20 @@
                ReferencedContainer = "container:ios-etsy-sdk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F5015B9E11583A77002E9A98"
+               BuildableName = "libKiwi.a"
+               BlueprintName = "Kiwi"
+               ReferencedContainer = "container:ios-etsy-sdkTests/Dependencies/Kiwi/Kiwi.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
