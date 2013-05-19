@@ -1,5 +1,5 @@
-[submodule "Dependencies/AFNetworking"]
-	path = Dependencies/AFNetworking
+[submodule "Dependencies"]
+	path = Dependencies
 	url = git://github.com/AFNetworking/AFNetworking.git
 [submodule "ios-etsy-sdkTests/Dependencies/Kiwi"]
 	path = ios-etsy-sdkTests/Dependencies/Kiwi
