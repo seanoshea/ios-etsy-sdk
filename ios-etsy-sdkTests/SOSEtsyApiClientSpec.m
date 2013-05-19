@@ -34,9 +34,8 @@ describe(@"A Listings Request", ^{
         } failureBlock:^(SOSEtsyResult *error) {
             returnedError = error;
         }];
-
-        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
-        [[expectFutureValue(returnedError) shouldEventually] beNil];
+        
+        [[expectFutureValue(returnedResult) shouldEventually] shouldNotBeNil];
     });
 });
 
@@ -60,8 +59,7 @@ describe(@"A Listings Request", ^{
             returnedError = error;
         }];
         
-        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
-        [[expectFutureValue(returnedError) shouldEventually] beNil];
+        [[expectFutureValue(returnedResult) shouldEventually] shouldNotBeNil];
     });
 });
 
@@ -79,8 +77,7 @@ describe(@"A Shop Request", ^{
             returnedError = error;
         }];
         
-        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
-        [[expectFutureValue(returnedError) shouldEventually] beNil];
+        [[expectFutureValue(returnedResult) shouldEventually] shouldNotBeNil];
     });
 });
 
@@ -104,8 +101,7 @@ describe(@"A Shop Request", ^{
             returnedError = error;
         }];
         
-        [[expectFutureValue(returnedResult) shouldEventually] beNonNil];
-        [[expectFutureValue(returnedError) shouldEventually] beNil];
+        [[expectFutureValue(returnedResult) shouldEventually] shouldNotBeNil];
     });
 });
 

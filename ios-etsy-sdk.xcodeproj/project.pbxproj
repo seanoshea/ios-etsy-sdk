@@ -15,7 +15,6 @@
 		76305DBA16B3293E000014C1 /* SOSEtsyShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DB816B3293E000014C1 /* SOSEtsyShop.m */; };
 		76305DBD16B32ADD000014C1 /* SOSEtsyShopResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76305DBE16B32ADD000014C1 /* SOSEtsyShopResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */; };
-		764D54DB1727304100D45D7A /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 764D54D61727301300D45D7A /* libKiwi.a */; };
 		7668EEB61698026700B6D54C /* SOSEtsyListingsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 76BCEEF2167D41DF007CF802 /* SOSEtsyListingsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7668EEB71698026700B6D54C /* SOSEtsyResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C3095167C413F002FA396 /* SOSEtsyResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7668EEB81698026700B6D54C /* SOSEtsyConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C30A7167C43D7002FA396 /* SOSEtsyConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,32 +26,24 @@
 		7668EEBE1698026700B6D54C /* SOSEtsyApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 769C304C167BF6B9002FA396 /* SOSEtsyApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		766B75581748D7D100A24E13 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75451748D7D100A24E13 /* AFHTTPClient.h */; };
 		766B75591748D7D100A24E13 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75461748D7D100A24E13 /* AFHTTPClient.m */; };
-		766B755A1748D7D100A24E13 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75461748D7D100A24E13 /* AFHTTPClient.m */; };
 		766B755B1748D7D100A24E13 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75471748D7D100A24E13 /* AFHTTPRequestOperation.h */; };
 		766B755C1748D7D100A24E13 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75481748D7D100A24E13 /* AFHTTPRequestOperation.m */; };
-		766B755D1748D7D100A24E13 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75481748D7D100A24E13 /* AFHTTPRequestOperation.m */; };
 		766B755E1748D7D100A24E13 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75491748D7D100A24E13 /* AFImageRequestOperation.h */; };
 		766B755F1748D7D100A24E13 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754A1748D7D100A24E13 /* AFImageRequestOperation.m */; };
-		766B75601748D7D100A24E13 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754A1748D7D100A24E13 /* AFImageRequestOperation.m */; };
 		766B75611748D7D100A24E13 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B754B1748D7D100A24E13 /* AFJSONRequestOperation.h */; };
 		766B75621748D7D100A24E13 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754C1748D7D100A24E13 /* AFJSONRequestOperation.m */; };
-		766B75631748D7D100A24E13 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754C1748D7D100A24E13 /* AFJSONRequestOperation.m */; };
 		766B75641748D7D100A24E13 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B754D1748D7D100A24E13 /* AFNetworkActivityIndicatorManager.h */; };
 		766B75651748D7D100A24E13 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754E1748D7D100A24E13 /* AFNetworkActivityIndicatorManager.m */; };
-		766B75661748D7D100A24E13 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B754E1748D7D100A24E13 /* AFNetworkActivityIndicatorManager.m */; };
 		766B75671748D7D100A24E13 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B754F1748D7D100A24E13 /* AFNetworking.h */; };
 		766B75681748D7D100A24E13 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75501748D7D100A24E13 /* AFPropertyListRequestOperation.h */; };
 		766B75691748D7D100A24E13 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75511748D7D100A24E13 /* AFPropertyListRequestOperation.m */; };
-		766B756A1748D7D100A24E13 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75511748D7D100A24E13 /* AFPropertyListRequestOperation.m */; };
 		766B756B1748D7D100A24E13 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75521748D7D100A24E13 /* AFURLConnectionOperation.h */; };
 		766B756C1748D7D100A24E13 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75531748D7D100A24E13 /* AFURLConnectionOperation.m */; };
-		766B756D1748D7D100A24E13 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75531748D7D100A24E13 /* AFURLConnectionOperation.m */; };
 		766B756E1748D7D100A24E13 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75541748D7D100A24E13 /* AFXMLRequestOperation.h */; };
 		766B756F1748D7D100A24E13 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75551748D7D100A24E13 /* AFXMLRequestOperation.m */; };
-		766B75701748D7D100A24E13 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75551748D7D100A24E13 /* AFXMLRequestOperation.m */; };
 		766B75711748D7D100A24E13 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75561748D7D100A24E13 /* UIImageView+AFNetworking.h */; };
 		766B75721748D7D100A24E13 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75571748D7D100A24E13 /* UIImageView+AFNetworking.m */; };
-		766B75731748D7D100A24E13 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75571748D7D100A24E13 /* UIImageView+AFNetworking.m */; };
+		766B75811748DE7F00A24E13 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 766B757C1748DA1C00A24E13 /* libKiwi.a */; };
 		769C3048167BF6B9002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C304D167BF6B9002FA396 /* SOSEtsyApiClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 769C304C167BF6B9002FA396 /* SOSEtsyApiClient.h */; };
 		769C304F167BF6B9002FA396 /* SOSEtsyApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C304E167BF6B9002FA396 /* SOSEtsyApiClient.m */; };
@@ -72,23 +63,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		764D54D51727301300D45D7A /* PBXContainerItemProxy */ = {
+		766B757B1748DA1C00A24E13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 764D54CE1727301300D45D7A /* Kiwi.xcodeproj */;
+			containerPortal = 766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F5015B9F11583A77002E9A98;
 			remoteInfo = Kiwi;
 		};
-		764D54D71727301300D45D7A /* PBXContainerItemProxy */ = {
+		766B757D1748DA1C00A24E13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 764D54CE1727301300D45D7A /* Kiwi.xcodeproj */;
+			containerPortal = 766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 832C83C7157263B300F160D5;
 			remoteInfo = "Kiwi-OSX";
 		};
-		764D54D91727301300D45D7A /* PBXContainerItemProxy */ = {
+		766B757F1748DA1C00A24E13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 764D54CE1727301300D45D7A /* Kiwi.xcodeproj */;
+			containerPortal = 766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F5015C9E11584017002E9A98;
 			remoteInfo = KiwiTests;
@@ -125,7 +116,6 @@
 		76305DB816B3293E000014C1 /* SOSEtsyShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShop.m; sourceTree = "<group>"; };
 		76305DBB16B32ADD000014C1 /* SOSEtsyShopResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSEtsyShopResult.h; sourceTree = "<group>"; };
 		76305DBC16B32ADD000014C1 /* SOSEtsyShopResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyShopResult.m; sourceTree = "<group>"; };
-		764D54CE1727301300D45D7A /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Dependencies/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
 		766B75451748D7D100A24E13 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = Dependencies/AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
 		766B75461748D7D100A24E13 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = Dependencies/AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
 		766B75471748D7D100A24E13 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = Dependencies/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -145,6 +135,7 @@
 		766B75551748D7D100A24E13 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = Dependencies/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		766B75561748D7D100A24E13 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "Dependencies/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		766B75571748D7D100A24E13 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "Dependencies/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Dependencies/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
 		769C3044167BF6B9002FA396 /* libios-etsy-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-etsy-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769C3047167BF6B9002FA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		769C304B167BF6B9002FA396 /* ios-etsy-sdk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-etsy-sdk-Prefix.pch"; sourceTree = "<group>"; };
@@ -188,8 +179,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766B75811748DE7F00A24E13 /* libKiwi.a in Frameworks */,
 				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
-				764D54DB1727304100D45D7A /* libKiwi.a in Frameworks */,
 				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
 				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
 				769C305D167BF6BA002FA396 /* libios-etsy-sdk.a in Frameworks */,
@@ -236,17 +227,17 @@
 		764D54BE17272BD400D45D7A /* Kiwi */ = {
 			isa = PBXGroup;
 			children = (
-				764D54CE1727301300D45D7A /* Kiwi.xcodeproj */,
+				766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */,
 			);
 			name = Kiwi;
 			sourceTree = "<group>";
 		};
-		764D54CF1727301300D45D7A /* Products */ = {
+		766B75751748DA1B00A24E13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				764D54D61727301300D45D7A /* libKiwi.a */,
-				764D54D81727301300D45D7A /* libKiwi-OSX.a */,
-				764D54DA1727301300D45D7A /* KiwiTests.octest */,
+				766B757C1748DA1C00A24E13 /* libKiwi.a */,
+				766B757E1748DA1C00A24E13 /* libKiwi-OSX.a */,
+				766B75801748DA1C00A24E13 /* KiwiTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -476,8 +467,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 764D54CF1727301300D45D7A /* Products */;
-					ProjectRef = 764D54CE1727301300D45D7A /* Kiwi.xcodeproj */;
+					ProductGroup = 766B75751748DA1B00A24E13 /* Products */;
+					ProjectRef = 766B75741748DA1B00A24E13 /* Kiwi.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -489,25 +480,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		764D54D61727301300D45D7A /* libKiwi.a */ = {
+		766B757C1748DA1C00A24E13 /* libKiwi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libKiwi.a;
-			remoteRef = 764D54D51727301300D45D7A /* PBXContainerItemProxy */;
+			remoteRef = 766B757B1748DA1C00A24E13 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		764D54D81727301300D45D7A /* libKiwi-OSX.a */ = {
+		766B757E1748DA1C00A24E13 /* libKiwi-OSX.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libKiwi-OSX.a";
-			remoteRef = 764D54D71727301300D45D7A /* PBXContainerItemProxy */;
+			remoteRef = 766B757D1748DA1C00A24E13 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		764D54DA1727301300D45D7A /* KiwiTests.octest */ = {
+		766B75801748DA1C00A24E13 /* KiwiTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = KiwiTests.octest;
-			remoteRef = 764D54D91727301300D45D7A /* PBXContainerItemProxy */;
+			remoteRef = 766B757F1748DA1C00A24E13 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -574,15 +565,6 @@
 			files = (
 				76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */,
 				762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */,
-				766B755A1748D7D100A24E13 /* AFHTTPClient.m in Sources */,
-				766B755D1748D7D100A24E13 /* AFHTTPRequestOperation.m in Sources */,
-				766B75601748D7D100A24E13 /* AFImageRequestOperation.m in Sources */,
-				766B75631748D7D100A24E13 /* AFJSONRequestOperation.m in Sources */,
-				766B75661748D7D100A24E13 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				766B756A1748D7D100A24E13 /* AFPropertyListRequestOperation.m in Sources */,
-				766B756D1748D7D100A24E13 /* AFURLConnectionOperation.m in Sources */,
-				766B75701748D7D100A24E13 /* AFXMLRequestOperation.m in Sources */,
-				766B75731748D7D100A24E13 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +665,7 @@
 		769C306D167BF6BA002FA396 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -692,7 +675,7 @@
 				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -700,6 +683,7 @@
 		769C306E167BF6BA002FA396 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -709,7 +693,7 @@
 				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/ios-etsy-sdkTests/Dependencies/Kiwi/Classes/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
