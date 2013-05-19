@@ -1,7 +1,5 @@
 language: objective-c
 before_install:
   - git submodule update --init --recursive
-  - chmod a+x travis/before_script.sh
-  - chmod a+x travis/script.sh
-before_script: travis/before_script.sh
+before_script: xcodebuild -list -workspace ios-etsy-sdk.xcodepro
 script: travis/script.sh
