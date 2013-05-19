@@ -1,6 +1,6 @@
-[submodule "ios-etsy-sdk/Dependencies/AFNetworking"]
-	path = ios-etsy-sdk/Dependencies/AFNetworking
+[submodule "Dependencies/AFNetworking"]
+	path = Dependencies/AFNetworking
 	url = git://github.com/AFNetworking/AFNetworking.git
-[submodule "ios-etsy-sdk/ios-etsy-sdkTests/Dependencies/Kiwi"]
-	path = ios-etsy-sdk/ios-etsy-sdkTests/Dependencies/Kiwi
+[submodule "ios-etsy-sdkTests/Dependencies/Kiwi"]
+	path = ios-etsy-sdkTests/Dependencies/Kiwi
 	url = git://github.com/allending/Kiwi.git
