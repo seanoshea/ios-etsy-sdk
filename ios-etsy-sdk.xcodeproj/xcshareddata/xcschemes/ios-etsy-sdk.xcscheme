@@ -14,24 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "769C3043167BF6B9002FA396"
-               BuildableName = "libios-etsy-sdk.a"
-               BlueprintName = "ios-etsy-sdk"
-               ReferencedContainer = "container:ios-etsy-sdk.xcodeproj">
+               BlueprintIdentifier = "F5015B9E11583A77002E9A98"
+               BuildableName = "libKiwi.a"
+               BlueprintName = "Kiwi"
+               ReferencedContainer = "container:ios-etsy-sdkTests/Dependencies/Kiwi/Kiwi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5015B9E11583A77002E9A98"
-               BuildableName = "libKiwi.a"
-               BlueprintName = "Kiwi"
-               ReferencedContainer = "container:ios-etsy-sdkTests/Dependencies/Kiwi/Kiwi.xcodeproj">
+               BlueprintIdentifier = "769C3043167BF6B9002FA396"
+               BuildableName = "libios-etsy-sdk.a"
+               BlueprintName = "ios-etsy-sdk"
+               ReferencedContainer = "container:ios-etsy-sdk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

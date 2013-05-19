@@ -43,7 +43,7 @@
 		766B756F1748D7D100A24E13 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75551748D7D100A24E13 /* AFXMLRequestOperation.m */; };
 		766B75711748D7D100A24E13 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 766B75561748D7D100A24E13 /* UIImageView+AFNetworking.h */; };
 		766B75721748D7D100A24E13 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B75571748D7D100A24E13 /* UIImageView+AFNetworking.m */; };
-		766B75811748DE7F00A24E13 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 766B757C1748DA1C00A24E13 /* libKiwi.a */; };
+		766B75831748F8CC00A24E13 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 766B757C1748DA1C00A24E13 /* libKiwi.a */; };
 		769C3048167BF6B9002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C304D167BF6B9002FA396 /* SOSEtsyApiClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 769C304C167BF6B9002FA396 /* SOSEtsyApiClient.h */; };
 		769C304F167BF6B9002FA396 /* SOSEtsyApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 769C304E167BF6B9002FA396 /* SOSEtsyApiClient.m */; };
@@ -179,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766B75811748DE7F00A24E13 /* libKiwi.a in Frameworks */,
+				766B75831748F8CC00A24E13 /* libKiwi.a in Frameworks */,
 				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
 				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
 				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
