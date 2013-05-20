@@ -6,9 +6,7 @@ http://www.etsy.com/developers has all information for Etsy developers.
 
 cocoa-pods
 ============
-{code}
-pod install --no-integrate
-{code}
+    pod install --no-integrate
 
 travis-ci
 ============
