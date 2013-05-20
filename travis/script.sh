@@ -1,5 +1,5 @@
 #!/bin/sh
 set -e
 
-ls Pods
+pod install --no-integrate
 xctool -project ios-etsy-sdk.xcodeproj -scheme ios-etsy-sdk build test
