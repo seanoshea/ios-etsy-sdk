@@ -1,0 +1,20 @@
+PODS:
+  - AFNetworking (1.2.1)
+  - ios-etsy-sdk (1.0):
+    - AFNetworking (>= 1.2.1)
+  - Kiwi (2.1)
+
+DEPENDENCIES:
+  - ios-etsy-sdk (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  ios-etsy-sdk:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: a44069e3c9c89867544f6639482f155c7e5f9b41
+  ios-etsy-sdk: 8b49e79a048afa5f8dc6ff6340063c8825fdb121
+  Kiwi: 054ef97d0e50c279b21113a0880a906fa153a7fd
+
+COCOAPODS: 0.19.1

@@ -1,6 +1,6 @@
 platform :ios, '5.0'
 
-pod 'AFNetworking', '~> 1.2'
+pod 'ios-etsy-sdk', :path => "../"
 
 target :'ios-etsy-sdkTests', :exclusive => true do
   pod 'Kiwi'
