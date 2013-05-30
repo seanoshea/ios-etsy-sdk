@@ -14,7 +14,7 @@
  limitations under the License.
  */
 
-#import "Kiwi.h"
+#import <Kiwi/Kiwi.h>
 
 #import "SOSEtsyApiClient.h"
 #import "SOSTestURLInterceptor.h"

@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54EC991F584642C3BA47A73C /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598D2F287CC64E7AB31C12B5 /* libPods-ios-etsy-sdkTests.a */; };
+		60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D416A2315000245820 /* SystemConfiguration.framework */; };
+		60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D716A2317E00245820 /* MobileCoreServices.framework */; };
+		761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761FC76B17419F4D009EBEDC /* UIKit.framework */; };
+		762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830881742D91D00546C57 /* SOSTestURLInterceptor.m */; };
+		769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3056167BF6B9002FA396 /* SenTestingKit.framework */; };
+		769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
+		769C3063167BF6BA002FA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 769C3061167BF6BA002FA396 /* InfoPlist.strings */; };
+		76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		598D2F287CC64E7AB31C12B5 /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-etsy-sdkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BAB2546937F493DA6A732AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6059CD7B17574C1800561EAB /* ios-etsy-sdk-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-etsy-sdk-Prefix.pch"; sourceTree = "<group>"; };
+		761FC76B17419F4D009EBEDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		762830871742D91D00546C57 /* SOSTestURLInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSTestURLInterceptor.h; sourceTree = "<group>"; };
+		762830881742D91D00546C57 /* SOSTestURLInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSTestURLInterceptor.m; sourceTree = "<group>"; };
+		769C3047167BF6B9002FA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		769C3055167BF6B9002FA396 /* ios-etsy-sdkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-etsy-sdkTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		769C3056167BF6B9002FA396 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		769C3060167BF6BA002FA396 /* ios-etsy-sdkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-etsy-sdkTests-Info.plist"; sourceTree = "<group>"; };
+		769C3062167BF6BA002FA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76A349D416A2315000245820 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		76A349D716A2317E00245820 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyApiClientSpec.m; sourceTree = "<group>"; };
+		B33277BF385140269A17BC5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C44715D5E547E5B7C99677 /* Pods-ios-etsy-sdkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-etsy-sdkTests.xcconfig"; path = "Pods/Pods-ios-etsy-sdkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		769C3051167BF6B9002FA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */,
+				60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */,
+				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
+				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
+				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
+				54EC991F584642C3BA47A73C /* libPods-ios-etsy-sdkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		769C3039167BF6B9002FA396 = {
+			isa = PBXGroup;
+			children = (
+				769C305E167BF6BA002FA396 /* ios-etsy-sdkTests */,
+				769C3046167BF6B9002FA396 /* Frameworks */,
+				769C3045167BF6B9002FA396 /* Products */,
+				E6C44715D5E547E5B7C99677 /* Pods-ios-etsy-sdkTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		769C3045167BF6B9002FA396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				769C3055167BF6B9002FA396 /* ios-etsy-sdkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		769C3046167BF6B9002FA396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769C3047167BF6B9002FA396 /* Foundation.framework */,
+				76A349D716A2317E00245820 /* MobileCoreServices.framework */,
+				769C3056167BF6B9002FA396 /* SenTestingKit.framework */,
+				76A349D416A2315000245820 /* SystemConfiguration.framework */,
+				761FC76B17419F4D009EBEDC /* UIKit.framework */,
+				5BAB2546937F493DA6A732AB /* libPods.a */,
+				598D2F287CC64E7AB31C12B5 /* libPods-ios-etsy-sdkTests.a */,
+				B33277BF385140269A17BC5E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		769C305E167BF6BA002FA396 /* ios-etsy-sdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6059CD7B17574C1800561EAB /* ios-etsy-sdk-Prefix.pch */,
+				76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */,
+				762830871742D91D00546C57 /* SOSTestURLInterceptor.h */,
+				762830881742D91D00546C57 /* SOSTestURLInterceptor.m */,
+				769C305F167BF6BA002FA396 /* Supporting Files */,
+			);
+			path = "ios-etsy-sdkTests";
+			sourceTree = "<group>";
+		};
+		769C305F167BF6BA002FA396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				769C3060167BF6BA002FA396 /* ios-etsy-sdkTests-Info.plist */,
+				769C3061167BF6BA002FA396 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		769C3054167BF6B9002FA396 /* ios-etsy-sdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 769C306C167BF6BA002FA396 /* Build configuration list for PBXNativeTarget "ios-etsy-sdkTests" */;
+			buildPhases = (
+				769C3050167BF6B9002FA396 /* Sources */,
+				769C3051167BF6B9002FA396 /* Frameworks */,
+				769C3052167BF6B9002FA396 /* Resources */,
+				769C3053167BF6B9002FA396 /* ShellScript */,
+				FC72B31588BA479690A1EB5E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-etsy-sdkTests";
+			productName = "ios-etsy-sdkTests";
+			productReference = 769C3055167BF6B9002FA396 /* ios-etsy-sdkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		769C303B167BF6B9002FA396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 769C303E167BF6B9002FA396 /* Build configuration list for PBXProject "ios-etsy-sdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 769C3039167BF6B9002FA396;
+			productRefGroup = 769C3045167BF6B9002FA396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				769C3054167BF6B9002FA396 /* ios-etsy-sdkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		769C3052167BF6B9002FA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769C3063167BF6BA002FA396 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		769C3053167BF6B9002FA396 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FC72B31588BA479690A1EB5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ios-etsy-sdkTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		769C3050167BF6B9002FA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */,
+				762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		769C3061167BF6BA002FA396 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				769C3062167BF6BA002FA396 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		769C3067167BF6BA002FA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		769C3068167BF6BA002FA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		769C306D167BF6BA002FA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C44715D5E547E5B7C99677 /* Pods-ios-etsy-sdkTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-etsy-sdkTests/ios-etsy-sdk-Prefix.pch";
+				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		769C306E167BF6BA002FA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C44715D5E547E5B7C99677 /* Pods-ios-etsy-sdkTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios-etsy-sdkTests/ios-etsy-sdk-Prefix.pch";
+				INFOPLIST_FILE = "ios-etsy-sdkTests/ios-etsy-sdkTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		769C303E167BF6B9002FA396 /* Build configuration list for PBXProject "ios-etsy-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769C3067167BF6BA002FA396 /* Debug */,
+				769C3068167BF6BA002FA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		769C306C167BF6BA002FA396 /* Build configuration list for PBXNativeTarget "ios-etsy-sdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769C306D167BF6BA002FA396 /* Debug */,
+				769C306E167BF6BA002FA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 769C303B167BF6B9002FA396 /* Project object */;
+}
