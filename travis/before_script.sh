@@ -2,7 +2,7 @@
 
 env
 
-xcodebuild -list -project ios-etsy-sdk.xcodeproj
+xcodebuild -list -project bootstrap/ios-etsy-sdk.xcodeproj
 
 brew update
 brew install xctool ios-sim
