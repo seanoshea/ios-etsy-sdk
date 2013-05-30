@@ -1,4 +1,5 @@
 #!/bin/sh
 set -e
 
-xctool -workspace bootstrap/ios-etsy-sdk.xcworkspace -scheme ios-etsy-sdk test
+cd bootstrap
+xctool -workspace ios-etsy-sdk.xcworkspace -scheme ios-etsy-sdk test
