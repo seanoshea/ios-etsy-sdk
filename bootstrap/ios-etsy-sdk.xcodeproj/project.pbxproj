@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54EC991F584642C3BA47A73C /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 598D2F287CC64E7AB31C12B5 /* libPods-ios-etsy-sdkTests.a */; };
 		60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D416A2315000245820 /* SystemConfiguration.framework */; };
 		60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D716A2317E00245820 /* MobileCoreServices.framework */; };
 		761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761FC76B17419F4D009EBEDC /* UIKit.framework */; };
 		762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830881742D91D00546C57 /* SOSTestURLInterceptor.m */; };
+		769A38CA1757F425009553FE /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769A38C91757F425009553FE /* libPods-ios-etsy-sdkTests.a */; };
+		769A38CC1757F46D009553FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769A38CB1757F46D009553FE /* Security.framework */; };
 		769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3056167BF6B9002FA396 /* SenTestingKit.framework */; };
 		769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C3063167BF6BA002FA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 769C3061167BF6BA002FA396 /* InfoPlist.strings */; };
@@ -25,6 +26,8 @@
 		761FC76B17419F4D009EBEDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		762830871742D91D00546C57 /* SOSTestURLInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSTestURLInterceptor.h; sourceTree = "<group>"; };
 		762830881742D91D00546C57 /* SOSTestURLInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSTestURLInterceptor.m; sourceTree = "<group>"; };
+		769A38C91757F425009553FE /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-ios-etsy-sdkTests.a"; path = "Pods/build/Release-iphoneos/libPods-ios-etsy-sdkTests.a"; sourceTree = "<group>"; };
+		769A38CB1757F46D009553FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		769C3047167BF6B9002FA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		769C3055167BF6B9002FA396 /* ios-etsy-sdkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-etsy-sdkTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		769C3056167BF6B9002FA396 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -42,12 +45,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769A38CC1757F46D009553FE /* Security.framework in Frameworks */,
 				60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */,
 				60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */,
 				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
 				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
 				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
-				54EC991F584642C3BA47A73C /* libPods-ios-etsy-sdkTests.a in Frameworks */,
+				769A38CA1757F425009553FE /* libPods-ios-etsy-sdkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,8 @@
 		769C3039167BF6B9002FA396 = {
 			isa = PBXGroup;
 			children = (
+				769A38CB1757F46D009553FE /* Security.framework */,
+				769A38C91757F425009553FE /* libPods-ios-etsy-sdkTests.a */,
 				769C305E167BF6BA002FA396 /* ios-etsy-sdkTests */,
 				769C3046167BF6B9002FA396 /* Frameworks */,
 				769C3045167BF6B9002FA396 /* Products */,
