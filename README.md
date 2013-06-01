@@ -6,7 +6,11 @@ http://www.etsy.com/developers has all information for Etsy developers.
 
 cocoa-pods
 ============
-    pod install --no-integrate
+If you are downloading this library, execute the following from the bootstrap directory:
+
+    pod install
+
+This should download AFNetworking and Kiwi. AFNetworking is used extensively in the project. Kiwi is simply used for unit testing the API calls.
 
 travis-ci
 ============
