@@ -15,8 +15,8 @@
 		769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3056167BF6B9002FA396 /* SenTestingKit.framework */; };
 		769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769C3047167BF6B9002FA396 /* Foundation.framework */; };
 		769C3063167BF6BA002FA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 769C3061167BF6BA002FA396 /* InfoPlist.strings */; };
+		76C3E633175D35C7003D15B7 /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C3E632175D35C7003D15B7 /* libPods-ios-etsy-sdkTests.a */; };
 		76D197A31727356900F0846F /* SOSEtsyApiClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */; };
-		AC5E573173504875918AD3C6 /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4178D8B8DBB425F9A736D16 /* libPods-ios-etsy-sdkTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,10 @@
 		769C3062167BF6BA002FA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		76A349D416A2315000245820 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		76A349D716A2317E00245820 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		76C3E632175D35C7003D15B7 /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-ios-etsy-sdkTests.a"; path = "Pods/build/Release-iphoneos/libPods-ios-etsy-sdkTests.a"; sourceTree = "<group>"; };
 		76D197A21727356900F0846F /* SOSEtsyApiClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSEtsyApiClientSpec.m; sourceTree = "<group>"; };
 		E6C44715D5E547E5B7C99677 /* Pods-ios-etsy-sdkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-etsy-sdkTests.xcconfig"; path = "Pods/Pods-ios-etsy-sdkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		F4074F955C19466A80B565DE /* Pods-ios-etsy-sdkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-etsy-sdkTests.xcconfig"; path = "Pods/Pods-ios-etsy-sdkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		F4178D8B8DBB425F9A736D16 /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-etsy-sdkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +43,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C3E633175D35C7003D15B7 /* libPods-ios-etsy-sdkTests.a in Frameworks */,
 				769A38CC1757F46D009553FE /* Security.framework in Frameworks */,
 				60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */,
 				60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */,
 				769C3057167BF6B9002FA396 /* SenTestingKit.framework in Frameworks */,
 				761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */,
 				769C305A167BF6BA002FA396 /* Foundation.framework in Frameworks */,
-				AC5E573173504875918AD3C6 /* libPods-ios-etsy-sdkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +78,13 @@
 		769C3046167BF6B9002FA396 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				769A38CB1757F46D009553FE /* Security.framework */,
 				769C3047167BF6B9002FA396 /* Foundation.framework */,
+				76C3E632175D35C7003D15B7 /* libPods-ios-etsy-sdkTests.a */,
 				76A349D716A2317E00245820 /* MobileCoreServices.framework */,
+				769A38CB1757F46D009553FE /* Security.framework */,
 				769C3056167BF6B9002FA396 /* SenTestingKit.framework */,
 				76A349D416A2315000245820 /* SystemConfiguration.framework */,
 				761FC76B17419F4D009EBEDC /* UIKit.framework */,
-				F4178D8B8DBB425F9A736D16 /* libPods-ios-etsy-sdkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
