@@ -15,3 +15,7 @@ This should download AFNetworking and Kiwi. AFNetworking is used extensively in 
 travis-ci
 ============
 [![Build Status](https://travis-ci.org/seanoshea/ios-etsy-sdk.png)](https://travis-ci.org/seanoshea/ios-etsy-sdk)
+
+versions
+===========
+1.0 (https://github.com/seanoshea/ios-etsy-sdk/tree/1.0) uploaded to CocoaPods
