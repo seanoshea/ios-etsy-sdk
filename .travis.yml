@@ -2,9 +2,5 @@ language: objective-c
 before_install:
   - chmod a+x travis/before_script.sh
   - chmod a+x travis/script.sh
-install:
-  - cd bootstrap
-  - pod install
-  - cd ../
 before_script: travis/before_script.sh
 script: travis/script.sh
