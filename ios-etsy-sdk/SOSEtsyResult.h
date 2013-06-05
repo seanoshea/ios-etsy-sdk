@@ -30,7 +30,7 @@
 /**
  Optionally populated with errors returned from the API server.
  */
-@property (nonatomic, strong) NSError* error;
+@property (nonatomic, strong) NSError *error;
 
 /**
  HTTP status code.

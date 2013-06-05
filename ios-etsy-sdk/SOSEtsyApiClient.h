@@ -24,8 +24,7 @@
  `SOSEtsyApiClient` provides a _very_ simple read-only interface to the Etsy API.
  The only API method supported provides client applications with the ability to look
  up active listings for a particular shop. Simple.
-*/
-
+ */
 @interface SOSEtsyApiClient : NSObject
 
 /**
@@ -33,7 +32,7 @@
  
  @return an instance of a SOSEtsyApiClient
  */
-+ (SOSEtsyApiClient*)sharedInstance;
++ (SOSEtsyApiClient *)sharedInstance;
 
 #pragma mark Init
 
@@ -42,7 +41,7 @@
  
  @param apiKey the API key to set.
  */
-- (void)initWithApiKey:(NSString*)apiKey;
+- (void)initWithApiKey:(NSString *)apiKey;
 
 #pragma mark Listings
 
@@ -53,9 +52,9 @@
  @param successBlock executed when the API call executes successfully.
  @param failureBlock executed when the API call fails to execute.
  */
-- (NSOperation*)getListings:(SOSEtsyListingsRequest*)listingsRequest
-               successBlock:(SOSEtsySuccessBlock)successBlock
-               failureBlock:(SOSEtsyFailureBlock)failureBlock;
+- (NSOperation *)getListings:(SOSEtsyListingsRequest *)listingsRequest
+                successBlock:(SOSEtsySuccessBlock)successBlock
+                failureBlock:(SOSEtsyFailureBlock)failureBlock;
 
 #pragma mark Shop
 
@@ -66,7 +65,7 @@
  @param successBlock executed when the API call executes successfully.
  @param failureBlock executed when the API call fails to execute.
  */
-- (NSOperation*)getShop:(SOSEtsyShopRequest*)shopRequest
-               successBlock:(SOSEtsySuccessBlock)successBlock
-               failureBlock:(SOSEtsyFailureBlock)failureBlock;
+- (NSOperation *)getShop:(SOSEtsyShopRequest *)shopRequest
+            successBlock:(SOSEtsySuccessBlock)successBlock
+            failureBlock:(SOSEtsyFailureBlock)failureBlock;
 @end

@@ -18,14 +18,13 @@
 
 @implementation SOSEtsyListing
 
-- (id)init
-{
-	self = [super init];
-	if (!self) {
-		return nil;
-	}
-	// initialization
-	_listingImages = [NSMutableArray array];
+- (id)init {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    // initialization
+    _listingImages = [NSMutableArray array];
     return self;
 }
 

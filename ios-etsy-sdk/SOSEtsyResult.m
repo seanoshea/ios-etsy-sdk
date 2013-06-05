@@ -18,8 +18,7 @@
 
 @implementation SOSEtsyResult
 
-- (id)init
-{
+- (id)init {
     if ((self = [super init])) {
         _results = [@[] mutableCopy];
         _code = 500;

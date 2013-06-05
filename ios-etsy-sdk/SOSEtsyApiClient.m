@@ -32,15 +32,14 @@
  */
 @property (nonatomic, copy) NSString *apiKey;
 
-- (void)basicSanityChecks:(SOSEtsyBaseRequest*)request;
-+ (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON;
+- (void)basicSanityChecks:(SOSEtsyBaseRequest *)request;
++ (SOSEtsyResult *)handleError:(NSError *)error withRequest:(NSURLRequest *)request andResponse:(NSHTTPURLResponse *)response responseJSON:(id)JSON;
 
 @end
 
 @implementation SOSEtsyApiClient
 
-+ (SOSEtsyApiClient*)sharedInstance
-{
++ (SOSEtsyApiClient *)sharedInstance {
     static SOSEtsyApiClient *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -49,19 +48,17 @@
     return instance;
 }
 
-- (void)initWithApiKey:(NSString*)apiKey
-{
+- (void)initWithApiKey:(NSString *)apiKey {
     NSParameterAssert(apiKey);
     self.apiKey = apiKey;
 }
 
-- (NSOperation*)getListings:(SOSEtsyListingsRequest*)listingsRequest
-               successBlock:(SOSEtsySuccessBlock)successBlock
-               failureBlock:(SOSEtsyFailureBlock)failureBlock
-{
+- (NSOperation *)getListings:(SOSEtsyListingsRequest *)listingsRequest
+                successBlock:(SOSEtsySuccessBlock)successBlock
+                failureBlock:(SOSEtsyFailureBlock)failureBlock {
     NSParameterAssert(successBlock);
     [self basicSanityChecks:listingsRequest];
-
+    
     // generate the url
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
     NSString *path = [NSString stringWithFormat:@"shops/%@/listings/active", listingsRequest.shopId];
@@ -70,7 +67,7 @@
                                     @"api_key": self.apiKey,
                                     @"includes": @"Images"
                                     }];
-
+    
     // execute the request
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         id jsonResponse = [JSON objectForKey:@"results"];
@@ -112,10 +109,9 @@
     return operation;
 }
 
-- (NSOperation*)getShop:(SOSEtsyShopRequest*)shopRequest
-           successBlock:(SOSEtsySuccessBlock)successBlock
-           failureBlock:(SOSEtsyFailureBlock)failureBlock
-{
+- (NSOperation *)getShop:(SOSEtsyShopRequest *)shopRequest
+            successBlock:(SOSEtsySuccessBlock)successBlock
+            failureBlock:(SOSEtsyFailureBlock)failureBlock {
     NSParameterAssert(successBlock);
     [self basicSanityChecks:shopRequest];
     
@@ -166,14 +162,12 @@
     return operation;
 }
 
-- (void)basicSanityChecks:(SOSEtsyBaseRequest*)request
-{
+- (void)basicSanityChecks:(SOSEtsyBaseRequest *)request {
     NSAssert(self.apiKey, @"apiKey MUST be set before making any requests. See initWithApiKey method");
     NSAssert(request, @"The request being executed should not be nil");
 }
 
-+ (SOSEtsyResult*)handleError:(NSError*)error withRequest:(NSURLRequest*)request andResponse:(NSHTTPURLResponse*)response responseJSON:(id)JSON
-{
++ (SOSEtsyResult *)handleError:(NSError *)error withRequest:(NSURLRequest *)request andResponse:(NSHTTPURLResponse *)response responseJSON:(id)JSON {
     SOSEtsyResult *result = [[SOSEtsyResult alloc] init];
     if (error) {
         result.error = error;
@@ -185,8 +179,7 @@
 
 #pragma mark JSON parsing
 
-+ (SOSEtsyListing*)digestListingFromJSON:(id)json
-{
++ (SOSEtsyListing *)digestListingFromJSON:(id)json {
     SOSEtsyListing *listing = [[SOSEtsyListing alloc] init];
     id jsonImages = [json objectForKey:@"Images"];
     if (jsonImages) {
@@ -240,8 +233,7 @@
     return listing;
 }
 
-+ (SOSEtsyListingImage*)digestListingImageFromJSON:(id)json
-{
++ (SOSEtsyListingImage *)digestListingImageFromJSON:(id)json {
     SOSEtsyListingImage *image = [[SOSEtsyListingImage alloc] init];
     id url_170x135 = [json objectForKey:@"url_170x135"];
     if (url_170x135) {
@@ -278,8 +270,7 @@
     return image;
 }
 
-+ (SOSEtsyShop*)digestShopFromJSON:(id)json
-{
++ (SOSEtsyShop *)digestShopFromJSON:(id)json {
     SOSEtsyShop *shop = [[SOSEtsyShop alloc] init];
     id is_vacation = [json objectForKey:@"is_vacation"];
     if (is_vacation) {
