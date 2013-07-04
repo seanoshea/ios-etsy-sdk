@@ -23,7 +23,7 @@
  */
 @interface SOSEtsyListing : SOSEtsyBaseModel
 
-@property (nonatomic, strong) NSMutableArray *listingImages;
+@property (nonatomic, copy) NSMutableArray *listingImages;
 @property (nonatomic, copy) NSString *creationTimestamp;
 @property (nonatomic, copy) NSString *currencyCode;
 @property (nonatomic, copy) NSString *description;

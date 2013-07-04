@@ -23,7 +23,7 @@ NSString *listingsResponse = @"{\"count\": 24,\"results\": [{\"listing_id\": 127
 
 @interface SOSTestURLInterceptor()
 
-@property (nonatomic, strong) NSMutableDictionary *responses;
+@property (nonatomic, copy) NSMutableDictionary *responses;
 @property (nonatomic, copy) NSString *key;
 
 @end

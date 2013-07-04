@@ -25,7 +25,7 @@
 /**
  A collection of domain objects returned from the API server. This is the meat of the response.
  */
-@property (nonatomic, strong) NSMutableArray *results;
+@property (nonatomic, copy) NSMutableArray *results;
 
 /**
  Optionally populated with errors returned from the API server.
