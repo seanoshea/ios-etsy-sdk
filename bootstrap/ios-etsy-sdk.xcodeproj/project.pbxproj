@@ -24,7 +24,7 @@
 		761FC76B17419F4D009EBEDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		762830871742D91D00546C57 /* SOSTestURLInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSTestURLInterceptor.h; sourceTree = "<group>"; };
 		762830881742D91D00546C57 /* SOSTestURLInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSTestURLInterceptor.m; sourceTree = "<group>"; };
-		765878D8175E941800FA0721 /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-ios-etsy-sdkTests.a"; path = "Pods/build/Release-iphoneos/libPods-ios-etsy-sdkTests.a"; sourceTree = "<group>"; };
+		765878D8175E941800FA0721 /* libPods-ios-etsy-sdkTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ios-etsy-sdkTests.a"; path = "Pods/build/Release-iphoneos/libPods-ios-etsy-sdkTests.a"; sourceTree = "<group>"; };
 		769A38CB1757F46D009553FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		769C3047167BF6B9002FA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		769C3055167BF6B9002FA396 /* ios-etsy-sdkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-etsy-sdkTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s i386";

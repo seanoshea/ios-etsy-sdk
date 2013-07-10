@@ -32,9 +32,6 @@
  */
 @property (nonatomic, copy) NSString *apiKey;
 
-- (void)basicSanityChecks:(SOSEtsyBaseRequest *)request;
-+ (SOSEtsyResult *)handleError:(NSError *)error withRequest:(NSURLRequest *)request andResponse:(NSHTTPURLResponse *)response responseJSON:(id)JSON;
-
 @end
 
 @implementation SOSEtsyApiClient
@@ -57,7 +54,7 @@
                 successBlock:(SOSEtsySuccessBlock)successBlock
                 failureBlock:(SOSEtsyFailureBlock)failureBlock {
     NSParameterAssert(successBlock);
-    [self basicSanityChecks:listingsRequest];
+    [self basicSanityChecksForRequest:listingsRequest];
     
     // generate the url
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
@@ -113,7 +110,7 @@
             successBlock:(SOSEtsySuccessBlock)successBlock
             failureBlock:(SOSEtsyFailureBlock)failureBlock {
     NSParameterAssert(successBlock);
-    [self basicSanityChecks:shopRequest];
+    [self basicSanityChecksForRequest:shopRequest];
     
     // generate the url
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", kApiBaseUrl]];
@@ -162,9 +159,9 @@
     return operation;
 }
 
-- (void)basicSanityChecks:(SOSEtsyBaseRequest *)request {
+- (void)basicSanityChecksForRequest:(SOSEtsyBaseRequest *)request {
     NSAssert(self.apiKey, @"apiKey MUST be set before making any requests. See initWithApiKey method");
-    NSAssert(request, @"The request being executed should not be nil");
+    NSParameterAssert(request != nil);
 }
 
 + (SOSEtsyResult *)handleError:(NSError *)error withRequest:(NSURLRequest *)request andResponse:(NSHTTPURLResponse *)response responseJSON:(id)JSON {
@@ -192,7 +189,7 @@
             [listing.listingImages addObject:[SOSEtsyApiClient digestListingImageFromJSON:jsonImages]];
         }
     } else {
-        // must be zero images associated with this listing?
+        NSLog(@"No images associated with this listing");
     }
     id creation_tsz = [json objectForKey:@"creation_tsz"];
     if (creation_tsz) {
