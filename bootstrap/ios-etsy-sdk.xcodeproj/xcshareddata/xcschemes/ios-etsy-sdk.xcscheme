@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A09E8935AF84F77B063732C"
+               BlueprintIdentifier = "4F99AABB7ECD41BAB61BE86C"
                BuildableName = "libPods-ios-etsy-sdkTests.a"
                BlueprintName = "Pods-ios-etsy-sdkTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

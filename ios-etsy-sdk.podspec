@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ios-etsy-sdk"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.license      = { :type => "Apache 2", :file => 'LICENSE' }
   s.homepage     = "https://github.com/seanoshea/ios-etsy-sdk"
   s.summary      = "Very simple read-only (no OAUTH) library to connect to a few Etsy services."
@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
       :tag => "1.0"
   }
   
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '7.0'
   s.source_files = 'ios-etsy-sdk'
   s.requires_arc = true
-  s.dependency 'AFNetworking', '>= 1.2.1'
+  s.dependency 'AFNetworking', '= 1.3.2'
   s.prefix_header_contents = '#import "SOSEtsyConstants.h"'
 end
