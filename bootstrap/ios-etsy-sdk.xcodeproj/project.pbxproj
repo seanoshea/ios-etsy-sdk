@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60F683611757523C00DCB415 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D416A2315000245820 /* SystemConfiguration.framework */; };
 		60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A349D716A2317E00245820 /* MobileCoreServices.framework */; };
+		761C826F17EF924F00E0371E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761C826E17EF924F00E0371E /* CoreGraphics.framework */; };
 		761FC76D17419F8A009EBEDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761FC76B17419F4D009EBEDC /* UIKit.framework */; };
 		762830891742D91D00546C57 /* SOSTestURLInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 762830881742D91D00546C57 /* SOSTestURLInterceptor.m */; };
 		765878D9175E941800FA0721 /* libPods-ios-etsy-sdkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 765878D8175E941800FA0721 /* libPods-ios-etsy-sdkTests.a */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		6059CD7B17574C1800561EAB /* ios-etsy-sdk-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios-etsy-sdk-Prefix.pch"; sourceTree = "<group>"; };
+		761C826E17EF924F00E0371E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		761FC76B17419F4D009EBEDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		762830871742D91D00546C57 /* SOSTestURLInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSTestURLInterceptor.h; sourceTree = "<group>"; };
 		762830881742D91D00546C57 /* SOSTestURLInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSTestURLInterceptor.m; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761C826F17EF924F00E0371E /* CoreGraphics.framework in Frameworks */,
 				765878D9175E941800FA0721 /* libPods-ios-etsy-sdkTests.a in Frameworks */,
 				769A38CC1757F46D009553FE /* Security.framework in Frameworks */,
 				60F683621757525B00DCB415 /* MobileCoreServices.framework in Frameworks */,
@@ -78,8 +81,9 @@
 		769C3046167BF6B9002FA396 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				765878D8175E941800FA0721 /* libPods-ios-etsy-sdkTests.a */,
+				761C826E17EF924F00E0371E /* CoreGraphics.framework */,
 				769C3047167BF6B9002FA396 /* Foundation.framework */,
+				765878D8175E941800FA0721 /* libPods-ios-etsy-sdkTests.a */,
 				76A349D716A2317E00245820 /* MobileCoreServices.framework */,
 				769A38CB1757F46D009553FE /* Security.framework */,
 				769C3056167BF6B9002FA396 /* SenTestingKit.framework */,
