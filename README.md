@@ -19,3 +19,4 @@ travis-ci
 versions
 ===========
 1.0 (https://github.com/seanoshea/ios-etsy-sdk/tree/1.0) uploaded to CocoaPods
+1.1 (https://github.com/seanoshea/ios-etsy-sdk/tree/1.1) iOS 7 only library.
